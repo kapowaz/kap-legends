@@ -1,0 +1,72 @@
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-image: url(/img/keyboard-blueprint-light.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 600px) {
+  .heroBanner {
+    background-size: contain;
+  }
+}
+
+html[data-theme='dark'] .heroBanner {
+  background-image: url(/img/keyboard-blueprint-dark.svg);
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 997px) {
+  .heroLogo {
+    height: 333px;
+    width: 324px;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroSubtitle {
+  font-weight: 600;
+  line-height: 1.2em;
+  letter-spacing: -0.02rem;
+  padding-top: 2rem;
+  max-width: 465px;
+}
+
+.heroSubtitle strong,
+.heroSubtitle a {
+  font-weight: 600;
+  color: var(--skyblue-120);
+}
+
+html[data-theme='dark'] .heroSubtitle strong,
+html[data-theme='dark'] .heroSubtitle a {
+  color: var(--navy);
+}
+
+@media screen and (max-width: 600px) {
+  .heroSubtitle {
+    font-size: 16px;
+    padding-top: 1rem;
+    max-width: 260px;
+  }
+}

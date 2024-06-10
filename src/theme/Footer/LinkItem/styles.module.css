@@ -1,0 +1,15 @@
+.footerLink {
+  display: inline-flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 996px) {
+  .footerLink {
+    display: inline-flex;
+  }
+}
+
+.iconWrapper {
+  display: inline-flex;
+  margin-right: 0.3rem;
+}

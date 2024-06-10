@@ -1,0 +1,21 @@
+---
+title: Projects
+---
+
+import Heading from '@theme-original/MDXComponents/Heading';
+import { projects } from '@site/src/projects';
+import { ProjectPreview } from '@site/src/components/ProjectPreview';
+import { DiscordLink } from '@site/src/components/DiscordLink';
+
+# Projects
+
+Here’s a list of all keycap sets using KAP Legend System designed by [kapowaz
+industries][kapowaz-industries].
+
+<div id="project-details">
+  {projects.map((project) => (
+    <ProjectPreview key={project.id} {...project} />
+  ))}
+</div>
+
+[kapowaz-industries]: https://kapowaz.industries

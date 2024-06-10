@@ -1,0 +1,161 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+:root {
+  --skyblue-120: #B2D8FF;
+  --skyblue-100: #81BEFE;
+  --skyblue-90: #71B7FE;
+  --skyblue-80: #61AFFF;
+  --skyblue-70: #33A0FA;
+  --skyblue-60: #1F97F9;
+  --skyblue-50: #0B8DF9;
+  --skyblue-40: #0685EE;
+  --blue-100: #0680E5;
+  --blue-90: #056FC7;
+  --blue-80: #0567B8;
+  --blue-70: #0461AE;
+  --blue-60: #04599F;
+  --blue-50: #045395;
+  --blue-40: #03457C;
+  --navy: #033863;
+  --ifm-color-primary-lightest: var(--skyblue-100);
+  --ifm-color-primary-lighter: var(--skyblue-90);
+  --ifm-color-primary-light: var(--skyblue-80);
+  --ifm-color-primary: var(--skyblue-70);
+  --ifm-color-primary-dark: var(--skyblue-60);
+  --ifm-color-primary-darker: var(--skyblue-50);
+  --ifm-color-primary-darkest: var(--skyblue-40);
+  --ifm-navbar-background-color: var(--skyblue-120);
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --letter-spacing-tight: -0.02em;
+  --color-blueprint-diagram: var(--skyblue-80);
+
+  --ifm-color-info-lightest: rgba(170, 212, 246, 1);
+  --ifm-color-info-lighter: rgba(135, 194, 242, 1);
+  --ifm-color-info-light: rgba(110, 181, 239, 1);
+  --ifm-color-info: rgba(84, 168, 236, 1);
+  --ifm-color-info-dark: rgba(76, 151, 212, 1);
+  --ifm-color-info-darker: rgba(71, 142, 201, 1);
+  --ifm-color-info-darkest: rgba(59, 117, 165, 1);
+  --infoblue-contrast-light: rgba(238, 246, 253, 1);
+  --infoblue-contrast-dark: rgba(25, 50, 71, 1);
+  --ifm-color-info-contrast-foreground: var(--infoblue-contrast-dark);
+  --ifm-color-info-contrast-background: var(--infoblue-contrast-light);
+  --ifm-link-color: var(--ifm-color-primary-darkest);
+}
+
+html[data-theme='dark'] {
+  --primary-lightest: var(--blue-100);
+  --primary-lighter: var(--blue-90);
+  --primary-light: var(--blue-80);
+  --primary: var(--blue-70);
+  --primary-dark: var(--blue-60);
+  --primary-darker: var(--blue-50);
+  --primary-darkest: var(--blue-40);
+  --ifm-navbar-background-color: var(--navy);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --color-blueprint-diagram: var(--blue-50);
+  --ifm-color-info-contrast-foreground: var(--infoblue-contrast-light);
+  --ifm-color-info-contrast-background: var(--infoblue-contrast-dark);
+  --ifm-link-color: var(--ifm-color-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.navbar__brand {
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+@media screen and (max-width: 996px) {
+  .header-github-link {
+    display: inline-flex;
+    gap: 8px;
+  }
+
+  .header-github-link>svg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 996px) {
+  .header-github-link {
+    text-indent: -9999px;
+    overflow: hidden;
+    height: 32px;
+    width: 48px;
+  }
+}
+
+.header-github-link {
+  text-indent: -9999px;
+  overflow: hidden;
+  gap: 0;
+}
+
+.navbar-sidebar .header-github-link {
+  text-indent: initial;
+  overflow: initial;
+  gap: 8px;
+}
+
+.header-github-link::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: flex;
+  background-color: var(--ifm-navbar-link-color);
+  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E");
+  transition: background-color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+}
+
+.header-github-link:hover::before {
+  background-color: var(--ifm-navbar-link-hover-color);
+}
+
+.hero--primary {
+  background-color: var(--blue-80);
+  --ifm-heading-color: var(--skyblue-90);
+  --ifm-hero-text-color: var(--skyblue-90);
+  --logo-background-color: var(--skyblue-40);
+  --logo-foreground-color: white;
+  --logo-heading-color: var(--skyblue-90);
+}
+
+[data-theme='dark'] .hero--primary {
+  --ifm-heading-color: var(--blue-40);
+  --ifm-hero-text-color: var(--blue-50);
+  background-color: var(--skyblue-40);
+  --logo-background-color: var(--blue-40);
+  --logo-heading-color: var(--blue-40);
+}
+
+.footer--dark {
+  --ifm-footer-background-color: var(--blue-80);
+  --ifm-footer-color: var(--skyblue-80);
+  --ifm-footer-title-color: var(--skyblue-120);
+  --ifm-footer-link-color: var(--skyblue-120);
+  --ifm-footer-link-hover-color: white;
+}
+
+article img {
+  border-radius: var(--ifm-global-radius);
+}
+
+.pagination-nav__link--prev .pagination-nav__label::before {
+  content: '← ';
+}
+
+.pagination-nav__link--next .pagination-nav__label::after {
+  content: ' →';
+}

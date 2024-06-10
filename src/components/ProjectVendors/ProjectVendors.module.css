@@ -1,0 +1,37 @@
+.vendors {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4px 16px;
+}
+
+@media screen and (min-width: 520px) {
+  .vendors {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .vendors {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .vendors {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.vendor {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.region {
+  font-weight: 300;
+}
+
+.externalLink {
+  white-space: nowrap;
+}

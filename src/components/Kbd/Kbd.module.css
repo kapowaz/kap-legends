@@ -1,0 +1,9 @@
+.keyboardShortcut {
+  font-family: var(--ifm-font-family-base);
+  font-weight: 600;
+  line-height: 1;
+  min-width: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

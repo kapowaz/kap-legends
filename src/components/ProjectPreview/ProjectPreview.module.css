@@ -1,0 +1,47 @@
+.project {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.project+.project {
+  padding-top: 32px;
+}
+
+.projectMeta {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-areas: "title content";
+  gap: 4px 24px;
+  font-size: 14px;
+}
+
+.projectMeta dt {
+  grid-column-start: title;
+  font-weight: 500;
+  margin: 0;
+}
+
+.projectMeta dd {
+  grid-column-start: content;
+  margin: 0;
+}
+
+.previewImageWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+}
+
+*+.previewImageWrapper {
+  padding-top: 16px;
+}
+
+.previewImage {
+  width: 100%;
+}
+
+.externalLink {
+  display: inline-flex;
+  align-items: center;
+}
