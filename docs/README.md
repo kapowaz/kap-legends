@@ -1,5 +1,9 @@
 # Designers’ Guide
 
+<p align="center">
+  <img src="images/kap-generation-preview.jpg" alt="A photo of several test keycaps using the KAP Legend System" width="720" height="500">
+</p>
+
 The KAP Legend System is a versatile and modern set of keycap legends in the
 cylindrical ‘Cherry’ keycap profile for creating doubleshot keycaps, designed by
 [kapowaz][kapowaz] and manufactured by [Keyreative][keyreative]. This Designers’
