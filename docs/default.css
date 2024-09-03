@@ -6,8 +6,7 @@ body {
 }
 
 #wrapper {
-  margin: 0 auto;
-  width: 800px;
+  margin: 0 16px;
 }
 
 #wrapper img {
@@ -110,17 +109,6 @@ header h1 a {
   align-items: center;
 }
 
-header h1 a::before {
-  content: '';
-  background-image: url(images/kapowaz-squircle.svg);
-  height: 48px;
-  width: 48px;
-  display: inline-flex;
-  background-repeat: no-repeat;
-  background-size: 48px 48px;
-  margin-right: 8px;
-}
-
 header h2 {
   color: #61AFFF;
   text-shadow: none;
@@ -188,4 +176,22 @@ main#content footer a[href^='https'] {
 main#content footer a,
 main#content footer a:hover {
   color: #94D2FF;
+}
+
+@media (min-width: 840px) {
+  #wrapper {
+    margin: 0 auto;
+    width: 800px;
+  }
+
+  header h1 a::before {
+    content: '';
+    background-image: url(images/kapowaz-squircle.svg);
+    height: 48px;
+    width: 48px;
+    display: inline-flex;
+    background-repeat: no-repeat;
+    background-size: 48px 48px;
+    margin-right: 8px;
+  }
 }
