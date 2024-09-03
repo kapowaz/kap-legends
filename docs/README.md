@@ -14,7 +14,7 @@ these legends.
 - [Core Concepts](#core-concepts)
   - [Kit selection](#kit-selection)
   - [Colors](#colors)
-- [Creating your set](#creating-your-set)
+- [Custom kits](#custom-kits)
   - [Tolerances](#tolerances)
     - [Line Width](#line-width)
     - [R-angle](#r-angle)
@@ -200,7 +200,7 @@ modifiers, and simply use the same color as alpha keys).
 The [safe zone](#safe-zone) line is an important concept should you decide to
 create [custom legends](#custom-legends), and is discussed later on.
 
-## Creating your set
+## Custom kits
 
 If you want to create your own custom kit, either using new legends (such as
 novelties), or by combining other existing legends, you can do so using the
