@@ -5,18 +5,6 @@ body {
   text-shadow: none;
 }
 
-#wrapper {
-  margin: 0 16px;
-}
-
-#wrapper img {
-  max-width: 100%;
-  border-radius: 8px;
-  display: flex;
-  margin: 0 auto;
-  height: auto;
-}
-
 a,
 footer a {
   color: white;
@@ -100,7 +88,11 @@ ul ul {
 
 header.page-header {
   background-color: #0568BA;
-  padding: 64px 0 24px;
+  padding: 64px 16px 24px;
+}
+
+.project-name-wrapper img {
+  display: none;
 }
 
 header h1 {
@@ -127,7 +119,7 @@ header h2 {
 }
 
 main#content {
-  padding-top: 32px;
+  padding: 32px 16px 0;
   margin: 0 auto;
 }
 
@@ -154,6 +146,14 @@ main#content h4 {
 
 main#content p {
   font-weight: 400;
+}
+
+main img {
+  max-width: 100%;
+  border-radius: 8px;
+  display: flex;
+  margin: 0 auto;
+  height: auto;
 }
 
 main#content p,
@@ -200,6 +200,11 @@ main#content footer a:hover {
     margin: 0 auto;
   }
 
+  header.page-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   #header-content {
     width: 800px;
     margin: 0 auto;
@@ -216,7 +221,13 @@ main#content footer a:hover {
     flex-grow: 1;
   }
 
-  #content {
+  .project-name-wrapper img {
+    display: flex;
+  }
+
+  main#content {
     width: 800px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
