@@ -56,11 +56,18 @@
 
   <section id="wrapper">
     <header class="page-header" role="banner">
-      <h1 class="project-name"><a href="{{ site.baseurl }}">KAP Legend System™</a></h1>
-      <h2 class="project-tagline">Cylindrical Doubleshot Keycaps</h2>
-      {% if site.github.is_project_page %}
-      <a href="{{ site.github.repository_url }}" class="btn github">View on GitHub</a>
-      {% endif %}
+      <div id="header-content">
+        <div class="project-name-wrapper">
+          <h1 class="project-name"><a href="{{ site.baseurl }}">KAP Legend System™</a></h1>
+          <img src="images/big-cat-logo.svg" height="32" width="32" />
+          <img src="images/keyreative-logo.svg" height="32" width="32" />
+          <img src="images/kapowaz-squircle.svg" height="32" width="32" />
+        </div>
+        <h2 class="project-tagline">Cylindrical Doubleshot Keycaps</h2>
+        {% if site.github.is_project_page %}
+        <a href="{{ site.github.repository_url }}" class="btn github">View on GitHub</a>
+        {% endif %}
+      </div>
     </header>
 
     <main id="content" class="main-content" role="main">

@@ -6,9 +6,9 @@
 
 The KAP Legend System is a versatile and modern set of keycap legends in the
 cylindrical ‘Cherry’ keycap profile for creating doubleshot keycaps, designed by
-[kapowaz][kapowaz] and manufactured by [Keyreative][keyreative]. This Designers’
-Guide is for anyone who is interested in creating and selling keycap sets using
-these legends.
+[kapowaz][kapowaz] and manufactured by [Big Cat][xbigcat], in partnership with
+[Keyreative][keyreative]. This Designers’ Guide is for anyone who is interested
+in creating and selling keycap sets using these legends.
 
 - [Available Resources](#available-resources)
   - [Kit Templates](#kit-templates)
@@ -391,6 +391,7 @@ separate geometry for each shot, allowing you to render doubleshot keycaps with
 (for example) transparent materials.
 
 [kapowaz]: https://kapowaz.industries
+[xbigcat]: https://www.xbigcat.com
 [keyreative]: https://keyreative.store
 [google-drive]: https://drive.google.com/drive/folders/1kV-D5MELIa8oaznFhoh9b9LvV5FcjUj3
 [krk]: https://keyboardrenderkit.readthedocs.io/
