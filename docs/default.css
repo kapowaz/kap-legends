@@ -5,6 +5,10 @@ body {
   text-shadow: none;
 }
 
+#logo {
+  margin-left: 20px;
+}
+
 a,
 footer a {
   color: white;
