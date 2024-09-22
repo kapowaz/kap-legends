@@ -105,7 +105,7 @@ these (in much higher resolution than the example above) [here][krk-legends].
 
 ## Core Concepts
 
-There are at present nearly 400 individual keycap legends available in the KAP
+There are at present over 400 individual keycap legends available in the KAP
 Legend System (when including the same legend appearing at different keycap
 sizes, and on different rows). This means whilst the system is incredibly
 versatile and flexible, it can also be a little overwhelming for a designer
