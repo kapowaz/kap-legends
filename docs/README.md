@@ -69,21 +69,7 @@ more depth below, in the section [Core concepts](#core-concepts).
 
 ### Packaging Templates
 
-![Box Art Small](images/box-art-small.png)
-
-Keyreative makes use of two sizes of boxes for their keycap trays once shipped,
-and as such there are two packaging templates for the small and large sizes
-respectively, which can be found in the Designer Resources.
-
-* [Box Art Large.pdf][box-art-large]
-* [Box Art Small.pdf][box-art-small]
-
-The packaging templates (as well as the kit templates) make use of the Inter
-typeface, which can be [downloaded here][inter-font]. You are free to design
-whatever packaging makes sense for your keycap set, but don’t feel you need to
-overthink it: the default packaging template is designed to let you create
-something that feels part of the KAP Legend System family without much effort,
-so that customers can readily recognise sets using the same legends.
+_We’re working on a new design for packaging, and so the previous template is redundant; new packaging templates will be provided once the new packaging has been finalised._.
 
 ### Modifier Lettering
 
