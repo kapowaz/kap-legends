@@ -123,12 +123,17 @@ elements of any project.
 
 ![Base Kit](images/base-kit.png)
 
-There are three* generic base kits in this repository (each of which has support
+There are a number of generic base kits in this repository (each of which has support
 for ANSI and ISO-UK layouts):
 
 * `Base Kit` — using the default icon & text legend modifiers
 * `Base Kit (Text Modifiers)` — using text-only modifiers
 * `Base Kit (Icon Modifiers)` — using icon-only modifiers
+* `Base Kit (Hangul)` — default modifiers and Hangul sublegends
+* `Base Kit (Katakana)` — default modifiers and Katakana sublegends
+* `Base Kit (Hiragana)` — default modifiers and Hiragana sublegends
+* `Base Kit (Ukraine Cyrillic)` — default modifiers and Ukraine Cyrillic sublegends
+* `Base Kit (US International)` — default modifiers and sublegends for US International layouts
 
 <small>*An additional `Base Kit (German)` layout exists, with kitting explicitly
 intended for German keyboard layouts; it is however not suitable for most
@@ -153,9 +158,26 @@ the following generic child kits:
   (Belgium) layouts
 * `Spanish Kit` — additional language support for Spanish (Spain) and Spanish
   (Latin America) layouts
+* `Hangul Kit` — additional alphanumeric keys with Hangul sublegends, plus
+  Hangul-specific modifiers
+* `Katakana Kit` — additional alphanumeric keys with Katakana sublegends,
+  intended for layouts with a Katakana-inspired aesthetic
+* `Hiragana Kit` — additional alphanumeric keys with Hiragana sublegends,
+  intended for layouts with a Hiragana-inspired aesthetic
+* `Ukraine Cyrillic Kit` — additional alphanumeric keys with Ukraine Cyrillic
+  sublegends, as well as additional numeric keys to support these layouts (and a
+  _Tryzub_ R4 1.0u novelty key)
+* `US International Kit` — additional alphanumeric keys with sublegends to
+  support the US International layout.
+* `Katakana JIS Kit` — Katakana sublegend alpha keys, with additional modifiers
+  and short spacebars to support JIS layouts.
+* `Hiragana JIS Kit` — Hiragana sublegend alpha keys, with additional modifiers
+  and short spacebars to support JIS layouts.
 
 Each of these kit diagrams can be found (on a separate artboard) within the file
-[Default Kits.pdf][default-kits].
+[Default Kits.pdf][default-kits]. Note that some of these kits are based on
+newer keycaps which are subject to manufacturing. Check with Keyreative to make
+sure the keys you want to use are available for production.
 
 ### Colors
 
