@@ -5,10 +5,28 @@
 </p>
 
 The KAP Legend System is a versatile and modern set of keycap legends in the
-cylindrical ‘Cherry’ keycap profile for creating doubleshot keycaps, designed by
-[kapowaz][kapowaz] and manufactured by [Big Cat][xbigcat], in partnership with
-[Keyreative][keyreative]. This Designers’ Guide is for anyone who is interested
-in creating and selling keycap sets using these legends.
+cylindrical ‘Cherry’ keycap profile for creating doubleshot keycaps (with a
+thickness of 1.7mm), designed by [kapowaz][kapowaz] and manufactured by [Big
+Cat][xbigcat], in partnership with [Keyreative][keyreative]. This Designers’
+Guide is for anyone who is interested in creating and selling keycap sets using
+these legends.
+
+Keyreative supports a range of manufacturing techniques using ABS, PBT or
+Polycarbonate* plastics. As well as standard doubleshot injection moulding,
+Keyreative can use a ‘hybrid’ dyesub/injection moulding technique (illustrated
+in the cutaway image below).
+
+An initial shot of white PBT is first used to create the legends, before colours
+are added using a dyesub technique. Finally, the outer keycap is moulded as a
+second shot. This allows using a much wider variety of colours on a single
+keycap (as with dyesub), but with the crisp legends of doubleshot moulding.
+
+<p align="center">
+  <img src="images/kat-hybrid-dyesub-keycap.png" alt="A cutaway diagram showing how the hybrid dyesub technique is created in manufacturing" width="250" height="240">
+</p>
+
+<small>*Polycarbonate can only be used on the initial legend shot, not for the
+outermost keycap base.</small>
 
 - [Available Resources](#available-resources)
   - [Kit Templates](#kit-templates)
@@ -375,7 +393,7 @@ icons that have a similar silhouette to yours as a guide for sizing.
 #### Stroke widths
 
 <p align="center">
-  <img src="images/icon-stroke.png" alt="An icon with a " width="350" height="250">
+  <img src="images/icon-stroke.png" alt="An icon with a stroke around its shapes" width="350" height="250">
 </p>
 
 Stroked lines that form part of an icon should have a stroke width of `0.5mm`.
