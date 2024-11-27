@@ -87,7 +87,37 @@ more depth below, in the section [Core concepts](#core-concepts).
 
 ### Packaging Templates
 
-_We’re working on a new design for packaging, and so the previous template is redundant; new packaging templates will be provided once the new packaging has been finalised._.
+The base kit(s) for KAP Legend System ship in a reusable, stackable plastic tray
+(moulded from recycled waste plastic) intended to store keycaps when not in use.
+This tray is shipped in a cardboard outer sleeve, for which [a PDF template is
+provided][tray-sleeve-box] in this repository.
+
+There are certain key design elements of the template which are intended to be
+consistent across different KAP Legend System keycap sets. As such you should
+only modify certain elements within the template.
+
+<p align="center">
+  <img src="images/tray-sleeve-art.png" width="551" height="527" alt="Tray sleeve template" />
+</p>
+
+* The box sides should only be updated to state the kit name (i.e. ‘KAP Your Set
+  Name’) set in the Inter Bold typeface. None of the colours on the box sides
+  should be changed (i.e. it should remain black/white/grey). These areas are
+  marked in red on the diagram above.
+* The layout and design on the box flaps should be unchanged, although the
+  colours can be adjusted to suit your needs. These areas are in orange on the
+  diagram above.
+* The lower section of the box top should be updated to show your kit name, but
+  otherwise the layout and design of this area should be unchanged. Again, you
+  can update the colours as you see fit. This area is also marked in orange
+  above.
+* The top section of the box top can be updated to contain whatever design best
+  fits your needs. This area is marked in green.
+* The box bottom can contain whatever design suits your needs. This area is also
+  marked in green.
+
+If you have a box design in mind that doesn’t fit within these constraints,
+please get in touch with Keyreative to discuss your requirements.
 
 ### Modifier Lettering
 
@@ -426,6 +456,5 @@ separate geometry for each shot, allowing you to render doubleshot keycaps with
 [color-previews]: https://github.com/kapowaz/kap-legends/blob/main/Designer%20Resources/Templates/Color%20Previews.pdf
 [default-kits]: https://github.com/kapowaz/kap-legends/blob/main/Designer%20Resources/Templates/Default%20Kits.pdf
 [modifier-legend-lettering]: https://github.com/kapowaz/kap-legends/blob/main/Designer%20Resources/Templates/Modifier%20Legend%20Lettering.pdf
-[box-art-large]: https://github.com/kapowaz/kap-legends/blob/main/Designer%20Resources/Templates/Box%20Art%20Large.pdf
-[box-art-small]: https://github.com/kapowaz/kap-legends/blob/main/Designer%20Resources/Templates/Box%20Art%20Small.pdf
+[tray-sleeve-box]: https://github.com/kapowaz/kap-legends/blob/main/Designer%20Resources/Templates/Tray%20Sleeve%20Box.pdf
 [inter-font]: https://rsms.me/inter/
