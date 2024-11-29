@@ -104,10 +104,10 @@ if you need guidance reach out to us to discuss.
 </p>
 
 1. The box sides should be updated with your kit name (i.e. ‘KAP Your Set Name’)
-  using the Inter Bold font. The colour of this text, the background colour and
-  the small logos should not be changed (i.e. they should remain black and
-  white). No additional design elements should be added to the sides. These
-  areas are marked in red on the diagram above.
+  using the Inter Bold font. The size and colour of this text, the background
+  colour and the small logos should not be changed (i.e. they should remain
+  black and white). No additional design elements should be added to the sides.
+  These areas are marked in red on the diagram above.
 2. The colours used for the KAP Legend System logo on the box sides can be
   adjusted to suit the remainder of the box design, subject to design approval
   prior to manufacturing. These areas are marked in orange on the diagram above.
