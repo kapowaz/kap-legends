@@ -92,32 +92,43 @@ The base kit(s) for KAP Legend System ship in a reusable, stackable plastic tray
 This tray is shipped in a cardboard outer sleeve, for which [a PDF template is
 provided][tray-sleeve-box] in this repository.
 
-There are certain key design elements of the template which are intended to be
-consistent across different KAP Legend System keycap sets. As such you should
-only modify certain elements within the template.
+The packaging template has a specific layout and structure that is intended to
+help customers easily identify KAP Legend System keycap sets as belonging to the
+overall family, so elements of the design are common to all KAP sets.
+As such, there are certain parts of the packaging template that can be
+customised, and other parts which should remain relatively unchanged. As always,
+if you need guidance reach out to us to discuss.
 
 <p align="center">
   <img src="images/tray-sleeve-art.png" width="551" height="527" alt="Tray sleeve template" />
 </p>
 
-* The box sides should only be updated to state the kit name (i.e. ‘KAP Your Set
-  Name’) set in the Inter Bold typeface. None of the colours on the box sides
-  should be changed (i.e. it should remain black/white/grey). These areas are
-  marked in red on the diagram above.
-* The layout and design on the box flaps should be unchanged, although the
-  colours can be adjusted to suit your needs. These areas are in orange on the
-  diagram above.
-* The lower section of the box top should be updated to show your kit name, but
+1. The box sides should be updated with your kit name (i.e. ‘KAP Your Set Name’)
+  using the Inter Bold font. The colour of this text, the background colour and
+  the small logos should not be changed (i.e. they should remain black and
+  white). No additional design elements should be added to the sides. These
+  areas are marked in red on the diagram above.
+2. The colours used for the KAP Legend System logo on the box sides can be
+  adjusted to suit the remainder of the box design, subject to design approval
+  prior to manufacturing. These areas are marked in orange on the diagram above.
+3. The layout and design on the box flaps should be unchanged, although the
+  colours (including background) can be adjusted to suit your needs. No
+  additional design elements should be added in this area. These areas are
+  marked in orange on the diagram above.
+4. The lower section of the box top should be updated to show your kit name, but
   otherwise the layout and design of this area should be unchanged. Again, you
-  can update the colours as you see fit. This area is also marked in orange
+  can update the colours as you see fit. This area is marked in orange on the diagram
   above.
-* The top section of the box top can be updated to contain whatever design best
-  fits your needs. This area is marked in green.
-* The box bottom can contain whatever design suits your needs. This area is also
-  marked in green.
+5. The top section of the box top can be updated to contain whatever design best
+  fits your needs. This area is marked in green on the diagram above.
+6. The box bottom can contain whatever design suits your needs. Note that an
+  area for a 50mm × 40mm barcode sticker has been included: this should remain
+  on the bottom of the box, although the location can be adjusted to suit your
+  design. This area is marked in green on the diagram above.
 
-If you have a box design in mind that doesn’t fit within these constraints,
-please get in touch with Keyreative to discuss your requirements.
+Final design approval is required ahead of production, so if you have a box
+design in mind that doesn’t fit within these constraints, please get in touch
+with Keyreative to discuss your requirements.
 
 ### Modifier Lettering
 
