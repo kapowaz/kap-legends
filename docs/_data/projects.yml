@@ -1,0 +1,303 @@
+- name: KAP Generation
+  id: kap-generation
+  preview: images/sets/kap-generation.jpg
+  interest_check: https://geekhack.org/index.php?topic=124004.0
+  designer: kapowaz
+  modifiers: Default
+  sublegends: None
+  colors:
+    main: "#3C1F1B"
+    legends:
+      - "#DD7869"
+  status: Manufacturing
+  shipping: Feb 2025
+- name: KAP White on Black
+  id: kap-white-on-black
+  preview: images/sets/kap-white-on-black.jpg
+  designer: kapowaz
+  modifiers: Default
+  sublegends: None
+  colors:
+    main: "#000000"
+    legends:
+      - "#FFFFFF"
+      - "#FF675D"
+      - "#FEBC4A"
+      - "#6CEE2B"
+      - "#63CDEE"
+      - "#B067FF"
+  status: Manufacturing
+  shipping: Feb/Mar 2025
+- name: KAP Disconnected Dark
+  id: kap-disconnected-dark
+  preview: images/sets/kap-disconnected-dark.jpg
+  designer: KasperL
+  modifiers: Hybrid
+  sublegends: None
+  colors:
+    main: "#666666"
+    legends:
+      - "#000000"
+      - "#3A39BC"
+  status: Colour Matching
+- name: KAP MV Classic
+  id: kap-mv-classic
+  preview: images/sets/kap-mv-classic.jpg
+  designer: kapowaz & maxvoltar
+  modifiers: Sublegend Hybrid
+  sublegends: Functional
+  colors:
+    main: "#ECE5DA"
+    legends:
+      - "#000000"
+      - "#A59E97"
+      - "#957A59"
+      - "#C66018"
+      - "#446E3D"
+      - "#B63830"
+      - "#376C99"
+      - "#885595"
+  status: Design
+- name: KAP MV Classic Dark
+  id: kap-mv-classic-dark
+  preview: images/sets/kap-mv-classic-dark.jpg
+  designer: kapowaz & maxvoltar
+  modifiers: Sublegend Hybrid
+  sublegends: Functional
+  colors:
+    main: "#59544C"
+    legends:
+      - "#A59E97"
+      - "#4E483D"
+      - "#8A7C6A"
+      - "#B9703C"
+      - "#5F8259"
+      - "#B35C56"
+      - "#4D7EA8"
+      - "#906D97"
+  status: Design
+- name: KAP Yarōze
+  id: kap-yaroze
+  preview: images/sets/kap-yaroze.jpg
+  designer: kapowaz
+  modifiers: Default
+  sublegends: Hiragana
+  colors:
+    main: "#1E1E1E"
+    legends:
+      - "#2E2E2E"
+      - "#404040"
+  status: Design
+- name: KAP Kudu
+  id: kap-kudu
+  preview: images/sets/kap-kudu.jpg
+  designer: Mori
+  colors:
+    main: "#48474c"
+    legends:
+      - "#FFFFFF"
+      - "#6c312d"
+      - "#7a7879"
+  modifiers: Text Hybrid
+  sublegends: None
+  status: Design
+- name: KAP Theatrum Orbis Terrarum
+  id: kap-tot
+  preview: images/sets/kap-tot.jpg
+  interest_check: https://geekhack.org/index.php?topic=124263.0
+  designer: Keepo
+  colors:
+    main: "#aaa69d"
+    legends:
+      - "#000000"
+      - "#3b282a"
+      - "#2d2f3c"
+      - "#343e36"
+      - "#817366"
+  modifiers: Text
+  sublegends: None
+  status: Design
+- name: KAP Technocraft
+  id: kap-technocraft
+  preview: images/sets/kap-technocraft.jpg
+  designer: madmax13
+  colors:
+    main: "#f2f5f2"
+    legends:
+      - "#bc3e34"
+      - "#ae5633"
+      - "#e8ab42"
+      - "#000000"
+  modifiers: Default
+  sublegends: None
+  status: Design
+- name: KAP Terrazzo
+  id: kap-terrazzo
+  preview: https://i.imgur.com/t8mL3Hd.jpeg
+  interest_check: https://geekhack.org/index.php?topic=123215.0
+  designer: Beesley
+  modifiers: Hybrid
+  sublegends: None
+  colors:
+    main: "#FDFAF6"
+    legends:
+      - "#637C7D"
+      - "#B17F5C"
+  status: Colour Matching
+- name: KAP Midas
+  id: kap-midas
+  preview: images/sets/kap-midas-black-alphas.jpg
+  designer: Manu
+  modifiers: Text
+  sublegends: None
+  colors:
+    main: "#000000"
+    legends:
+      - "#8C724D"
+      - "#EBE9E7"
+  status: Colour Matching
+- name: KAP Calculator
+  id: kap-calculator
+  preview: images/sets/kap-calculator.jpg
+  designer: kapowaz
+  modifiers: Default
+  sublegends: None
+  colors:
+    main: "#000000"
+    legends:
+      - "#FFFFFF"
+      - "#EB9E47"
+      - "#151E18"
+      - "#2C2421"
+  status: Design
+- name: KAP Active
+  id: kap-active
+  preview: images/sets/kap-active.png
+  designer: kapowaz
+  modifiers: Default
+  sublegends: None
+  colors:
+    main: "#000000"
+    legends:
+      - "#FFFFFF"
+      - "#CE0032"
+      - "#B2E517"
+      - "#1FBBDA"
+  status: Design
+- name: KAP Maidan
+  id: kap-maidan
+  preview: images/sets/kap-maidan.png
+  designer: kapowaz
+  modifiers: Icon
+  sublegends: Cyrillic
+  colors:
+    main: "#0057B7"
+    legends:
+      - "#FFDD00"
+      - "#003875"
+  status: Design
+- name: KAP White Rabbit
+  id: kap-white-rabbit
+  preview: images/sets/kap-white-rabbit.png
+  designer: kapowaz
+  modifiers: Default
+  sublegends: Hangul
+  colors:
+    main: "#141D0C"
+    legends:
+      - "#B4FF76"
+  status: Design
+- name: KAP Super Keycaps
+  id: kap-super-keycaps
+  preview: images/sets/kap-super-keycaps.png
+  designer: kapowaz
+  modifiers: Default
+  sublegends: Katakana
+  colors:
+    main: "#C6C0B9"
+    legends:
+      - "#404040"
+      - "#83807C"
+  status: Design
+- name: KAP Mega Keycaps
+  id: kap-mega-keycaps
+  preview: images/sets/kap-mega-keycaps.png
+  designer: kapowaz
+  modifiers: Default
+  sublegends: Katakana
+  colors:
+    main: "#6E6968"
+    legends:
+      - "#D0CAC8"
+      - "#F1D083"
+      - "#9C4A40"
+      - "#3C3939"
+  status: Design
+- name: KAP Kawaii
+  id: kap-kawaii
+  preview: images/sets/kap-kawaii.png
+  designer: kapowaz
+  modifiers: Default
+  sublegends: Hiragana
+  colors:
+    main: "#F7E5CA"
+    legends:
+      - "#F4B24F"
+      - "#F895B6"
+  status: Design
+- name: KAP Code
+  id: kap-code
+  preview: images/sets/kap-code.png
+  designer: kapowaz
+  modifiers: Default
+  sublegends: None
+  colors:
+    main: "#13161B"
+    legends:
+      - "#434447"
+      - "#843BBF"
+      - "#BB173E"
+      - "#E57C1A"
+      - "#E9B935"
+      - "#D4F76E"
+      - "#50B7D3"
+  status: Design
+- name: KAP PX-16
+  id: kap-px-16
+  preview: images/sets/kap-px-16.png
+  designer: kapowaz
+  modifiers: Icon/Text Hybrid
+  sublegends: Functional
+  colors:
+    main: "#E4DAD7"
+    legends:
+      - "#000000"
+      - "#8D96B5"
+      - "#F3A474"
+  status: Design
+- name: KAP Harajuku
+  id: kap-harajuku
+  preview: images/sets/kap-harajuku.png
+  designer: kapowaz
+  modifiers: Default
+  sublegends: Hiragana
+  colors:
+    main: "#23103C"
+    legends:
+      - "#B183EC"
+      - "#924DEA"
+  status: Design
+- name: KAP Dolch
+  id: kap-dolch
+  preview: images/sets/kap-dolch.png
+  designer: kapowaz
+  modifiers: Icon/Text Hybrid
+  sublegends: None
+  colors:
+    main: "#74797B"
+    legends:
+      - "#FFFFFF"
+      - "#3E3F42"
+      - "#C64E61"
+      - "#2CAFA8"
+  status: Design

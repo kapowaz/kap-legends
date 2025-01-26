@@ -1,0 +1,38 @@
+main#content .project-color {
+  display: inline-flex;
+  margin: 0;
+  padding: 4px;
+  border-radius: 2px;
+  gap: 4px;
+}
+
+main#content .project-color .legend-color {
+  display: inline-flex;
+  height: 12px;
+  width: 12px;
+  border-radius: 12px;
+  margin: 0;
+}
+
+main#content section.project h2 {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
+main#content .project-meta {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 4px 24px;
+  font-size: 14px;
+}
+
+main#content .project-meta dt {
+  font-weight: 500;
+  color: white;
+  margin: 0;
+}
+
+main#content .project-meta dd {
+  margin: 0;
+}

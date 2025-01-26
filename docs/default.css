@@ -122,12 +122,30 @@ header h2 {
   text-shadow: none;
 }
 
+header nav.main-navigation {
+  display: flex;
+  flex-direction: row;
+}
+
+header nav.main-navigation ul {
+  display: flex;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
+}
+
+header nav.main-navigation ul li {
+  list-style: none;
+}
+
 main#content {
   padding: 32px 16px 0;
   margin: 0 auto;
 }
 
 main#content h1 {
+  font-weight: 600;
   margin-bottom: 4px;
 }
 
