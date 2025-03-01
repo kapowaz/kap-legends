@@ -156,6 +156,23 @@
       - "#8C724D"
       - "#EBE9E7"
   status: Colour Matching
+- name: KAP Retro Lights R2
+  id: kap-retro-lights-r2
+  preview: images/sets/kap-retro-lights-r2.jpg
+  designer: Jr.Mars
+  modifiers: Text
+  sublegends: None
+  colors:
+    main: "#cac9c5"
+    legends:
+      - "#000000"
+      - "#25bd59"
+      - "#048cd8"
+      - "#ffbf3f"
+      - "#ff665e"
+      - "#a564b6"
+      - "#ab60bd"
+  status: Colour Matching
 - name: KAP Calculator
   id: kap-calculator
   preview: images/sets/kap-calculator.jpg
