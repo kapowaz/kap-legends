@@ -21,34 +21,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-a.btn {
-  display: inline-flex;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 700;
-  background: #94D2FF;
-  color: #0685EE;
-  padding: 1px 4px;
-  border-radius: 4px;
-  line-height: 18px;
-  align-items: center;
-}
-
-a.btn:hover {
-  text-decoration: none;
-  background: white;
-}
-
-a.btn.github::before {
-  content: '';
-  height: 14px;
-  width: 14px;
-  background: url(images/github-icon.svg);
-  background-repeat: no-repeat;
-  background-size: 14px 14px;
-  margin-right: 3px;
-}
-
 code,
 pre {
   font-family: "Source Code Pro", monospace;
@@ -92,7 +64,6 @@ ul ul {
 
 header.page-header {
   background-color: #0568BA;
-  padding: 64px 16px 24px;
 }
 
 .project-name-wrapper img {
@@ -136,7 +107,44 @@ header nav.main-navigation ul {
 }
 
 header nav.main-navigation ul li {
+  display: inline-flex;
   list-style: none;
+  margin: 0;
+}
+
+header nav.main-navigation ul li a {
+  display: inline-flex;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  align-items: center;
+}
+
+header nav.main-navigation ul li a:not(.btn) {
+  color: #94D2FF;
+}
+
+header nav.main-navigation ul li a.btn {
+  background: #94D2FF;
+  color: #0685EE;
+  padding: 1px 4px;
+  border-radius: 4px;
+}
+
+header nav.main-navigation ul li a.btn:hover {
+  text-decoration: none;
+  background: white;
+}
+
+header nav.main-navigation ul li a.btn.github::before {
+  content: '';
+  height: 14px;
+  width: 14px;
+  background: url(images/github-icon.svg);
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  margin-right: 3px;
 }
 
 main#content {
@@ -215,6 +223,33 @@ main#content footer a[href^='https'] {
 main#content footer a,
 main#content footer a:hover {
   color: #94D2FF;
+}
+
+@media (max-width: 500px) {
+  header.page-header {
+    padding: 32px 16px 24px;
+  }
+
+  h1.project-name a {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 260px;
+    height: 288px;
+    background-image: url(images/title-logo-mobile.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 501px) {
+  header.page-header {
+    padding: 64px 16px 24px;
+  }
+}
+
+@media (min-width: 600px) {
+  h1.project-name a img {
+    display: flex;
+  }
 }
 
 @media (min-width: 840px) {
