@@ -23,16 +23,19 @@ main#content section.project h2 {
 main#content .project-meta {
   display: grid;
   grid-template-columns: 100px 1fr;
+  grid-template-areas: "title content";
   gap: 4px 24px;
   font-size: 14px;
 }
 
 main#content .project-meta dt {
+  grid-column-start: title;
   font-weight: 500;
   color: white;
   margin: 0;
 }
 
 main#content .project-meta dd {
+  grid-column-start: content;
   margin: 0;
 }
