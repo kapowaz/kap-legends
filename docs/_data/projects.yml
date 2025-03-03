@@ -173,6 +173,18 @@
       - "#a564b6"
       - "#ab60bd"
   status: Colour Matching
+- name: KAP Maidan
+  id: kap-maidan
+  preview: images/sets/kap-maidan.jpg
+  designer: kapowaz
+  modifiers: Icon
+  sublegends: Cyrillic
+  colors:
+    main: "#0057B7"
+    legends:
+      - "#FFDD00"
+      - "#003875"
+  status: Design
 - name: KAP Calculator
   id: kap-calculator
   preview: images/sets/kap-calculator.jpg
@@ -200,18 +212,6 @@
       - "#CE0032"
       - "#B2E517"
       - "#1FBBDA"
-  status: Design
-- name: KAP Maidan
-  id: kap-maidan
-  preview: images/sets/kap-maidan.png
-  designer: kapowaz
-  modifiers: Icon
-  sublegends: Cyrillic
-  colors:
-    main: "#0057B7"
-    legends:
-      - "#FFDD00"
-      - "#003875"
   status: Design
 - name: KAP White Rabbit
   id: kap-white-rabbit
