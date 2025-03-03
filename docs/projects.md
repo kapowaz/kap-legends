@@ -52,6 +52,12 @@ represent the kitting or precise colours of the final shipping product.
         <dt>Shipping</dt>
         <dd>{{ project.shipping }}</dd>
       {% endif %}
+      {% if project.vendors %}
+        <dt>Vendors</dt>
+        {% for vendor in project.vendors %}
+          <dd>{{ vendor.region }}: <a href="{{ vendor.url }}" target="_blank">{{ vendor.name }}</a></dd>
+        {% endfor %}
+      {% endif %}
     </dl>
   </section>
 {% endfor %}

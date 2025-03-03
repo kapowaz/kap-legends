@@ -9,8 +9,14 @@
     main: "#3C1F1B"
     legends:
       - "#DD7869"
-  status: Manufacturing
-  shipping: Feb 2025
+  status: Shipping
+  vendors:
+    - region: EU
+      name: MonacoKeys
+      url: https://monacokeys.de/en/collections/keycaps/products/kap-generation-cherry-profile-abs-pbt-double-shot-keycap-set
+    # - region: US
+    #   name: CannonKeys
+    #   url: https://cannonkeys.com/products/kap-generation
 - name: KAP White on Black
   id: kap-white-on-black
   preview: images/sets/kap-white-on-black.jpg
@@ -27,7 +33,7 @@
       - "#63CDEE"
       - "#B067FF"
   status: Manufacturing
-  shipping: Feb/Mar 2025
+  shipping: March 2025
 - name: KAP Disconnected Dark
   id: kap-disconnected-dark
   preview: images/sets/kap-disconnected-dark.jpg
