@@ -11,23 +11,7 @@ Cat][xbigcat], in partnership with [Keyreative][keyreative]. This Designers’
 Guide is for anyone who is interested in creating and selling keycap sets using
 these legends.
 
-Keyreative supports a range of manufacturing techniques using ABS, PBT or
-Polycarbonate* plastics. As well as standard doubleshot injection moulding,
-Keyreative can use a ‘hybrid’ dyesub/injection moulding technique (illustrated
-in the cutaway image below).
-
-An initial shot of white PBT is first used to create the legends, before colours
-are added using a dyesub technique. Finally, the outer keycap is moulded as a
-second shot. This allows using a much wider variety of colours on a single
-keycap (as with dyesub), but with the crisp legends of doubleshot moulding.
-
-<p align="center">
-  <img src="images/kat-hybrid-dyesub-keycap.png" alt="A cutaway diagram showing how the hybrid dyesub technique is created in manufacturing" width="250" height="240">
-</p>
-
-<small>*Polycarbonate can only be used on the initial legend shot, not for the
-outermost keycap base.</small>
-
+- [Materials](#materials)
 - [Available Resources](#available-resources)
   - [Kit Templates](#kit-templates)
   - [Packaging Templates](#packaging-templates)
@@ -47,6 +31,45 @@ outermost keycap base.</small>
   - [Custom legends](#custom-legends)
   - [Custom Icons](#custom-icons)
 - [Blender and Keyboard Render Kit](#blender-and-keyboard-render-kit)
+
+## Materials
+
+Keyreative supports a range of manufacturing techniques using ABS, PBT or
+Polycarbonate plastics. As well as standard doubleshot injection moulding,
+Keyreative can use a ‘hybrid’ dyesub/injection moulding technique (illustrated
+in the cutaway image below).
+
+The three main types of plastic supported by KAP are:
+
+1. PBT (Polybutylene terephthalate)
+2. ABS (Acrylonitrile butadiene styrene)
+3. Polycarbonate
+
+Each of these plastics has advantages and limitations, depending on what your
+design goals are, so it’s worth bearing these limitations in mind when designing
+your set.
+
+* **Hybrid doubleshot**: requires the inner (legend) shot be manufactured with
+  PBT
+* **Dyesublimation**: requires that any part of the keycap with dyesub legends
+  be manufactured with PBT
+* **Transparency**: transparent parts need to be ABS or Polycarbonate;
+  Polycarbonate can be used for the inner (legend) shot only
+* **UV printing**: the outer shot must use ABS, as UV printing does not
+  adhere well to PBT. Note that UV legends have much lower durability than
+  doubleshot or dyesub legends.
+* **Durability**: PBT is significantly more wear-resistant than ABS, the latter
+  of which will go smooth/shiny on the top surface much more quickly with usage.
+
+<p align="center">
+  <img src="images/kat-hybrid-dyesub-keycap.png" alt="A cutaway diagram showing how the hybrid dyesub technique is created in manufacturing" width="250" height="240">
+</p>
+
+The hybrid doubleshot process allows the creation of keycaps with the crisp
+legend edges of doubleshot keys, but with the flexibility of colours associated
+with a dyesublimation process. With this technique, an initial shot of white PBT
+is first used to create the legends, before legend colours are added using a
+dyesub technique. Finally, the outer keycap is moulded as a second shot.
 
 ## Available Resources
 
