@@ -45,7 +45,19 @@
     legends:
       - "#000000"
       - "#3A39BC"
-  status: Colour Matching
+  status: Manufacturing
+- name: KAP Midas
+  id: kap-midas
+  preview: images/sets/kap-midas-black-alphas.jpg
+  designer: Manu
+  modifiers: Text
+  sublegends: None
+  colors:
+    main: "#000000"
+    legends:
+      - "#8C724D"
+      - "#EBE9E7"
+  status: Manufacturing
 - name: KAP MV Classic
   id: kap-mv-classic
   preview: images/sets/kap-mv-classic.jpg
@@ -63,7 +75,7 @@
       - "#B63830"
       - "#376C99"
       - "#885595"
-  status: Design
+  status: Colour Matching
 - name: KAP MV Classic Dark
   id: kap-mv-classic-dark
   preview: images/sets/kap-mv-classic-dark.jpg
@@ -81,7 +93,7 @@
       - "#B35C56"
       - "#4D7EA8"
       - "#906D97"
-  status: Design
+  status: Colour Matching
 - name: KAP Yarōze
   id: kap-yaroze
   preview: images/sets/kap-yaroze.jpg
@@ -93,7 +105,7 @@
     legends:
       - "#2E2E2E"
       - "#404040"
-  status: Design
+  status: Colour Matching
 - name: KAP Kudu
   id: kap-kudu
   preview: images/sets/kap-kudu.jpg
@@ -150,18 +162,6 @@
       - "#637C7D"
       - "#B17F5C"
   status: Colour Matching
-- name: KAP Midas
-  id: kap-midas
-  preview: images/sets/kap-midas-black-alphas.jpg
-  designer: Manu
-  modifiers: Text
-  sublegends: None
-  colors:
-    main: "#000000"
-    legends:
-      - "#8C724D"
-      - "#EBE9E7"
-  status: Colour Matching
 - name: KAP Retro Lights R2
   id: kap-retro-lights-r2
   preview: images/sets/kap-retro-lights-r2.jpg
@@ -179,18 +179,6 @@
       - "#a564b6"
       - "#ab60bd"
   status: Colour Matching
-- name: KAP Maidan
-  id: kap-maidan
-  preview: images/sets/kap-maidan.jpg
-  designer: kapowaz
-  modifiers: Icon
-  sublegends: Cyrillic
-  colors:
-    main: "#0057B7"
-    legends:
-      - "#FFDD00"
-      - "#003875"
-  status: Design
 - name: KAP Calculator
   id: kap-calculator
   preview: images/sets/kap-calculator.jpg
