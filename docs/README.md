@@ -98,14 +98,17 @@ Kit](#blender-and-keyboard-render-kit), which is discussed further down).
 
 ![Base Kit](images/base-kit-color.png)
 
-There are two basic template files available within the Designer Resources that
-you can use as a basis for creating production-ready design files:
+Within this repository you can find template files exported as SVG corresponding
+to all the predefined kits for KAP Legend System. For each kit there are two
+files: a production diagram, and a colour preview file. You can find a full
+listing of available kits on GitHub here:
 
-* [Color Previews.pdf][color-previews]
-* [Default Kits.pdf][default-kits]
+* [Color Previews][color-previews]
+* [Production Kits][production-files]
 
-Each of these files contains an artboard for each of the default kits already
-available. The process for using these to then create your sets is discussed in
+Previously these were provided as a multi-page PDF, but as the number of
+available kits continues to grow this has been superceded by individual files
+per-kit. The process for using these to then create your sets is discussed in
 more depth below, in the section [Core concepts](#core-concepts).
 
 ### Packaging Templates
@@ -169,25 +172,28 @@ discussed in more depth in the section on [custom legends](#custom-legends).
 
 If you’re using [Keyboard Render Kit][krk], you can use these instead of the
 default legends to quickly create sample renders for your designs. You can find
-these (in much higher resolution than the example above) [here][krk-legends].
+these (in much higher resolution than the example above) [here][krk-legends]. In
+future a preconfigured set of objects and materials, configured to correspond to
+the kits available with KAP Legend System will be made available to KRK
+customers for download.
 
 ## Core Concepts
 
-There are at present over 400 individual keycap legends available in the KAP
-Legend System (when including the same legend appearing at different keycap
-sizes, and on different rows). This means whilst the system is incredibly
-versatile and flexible, it can also be a little overwhelming for a designer
-setting out to make a keycap set.
+There are over 600 individual keycap legends available in the KAP Legend System
+(when including the same legend appearing at different keycap sizes, and on
+different rows). This means whilst the system is incredibly versatile and
+flexible, it can also be a little overwhelming for a designer setting out to
+make a keycap set.
 
 To simplify the process of picking which legends to use, we have created several
 template kits with support for a range of common keyboard layouts, as well as
 child kits with support for more esoteric layouts, novelties and other customer
 personalisation.
 
-You can find PDF files containing all of these kits in two forms: [Color
-Previews.pdf][color-previews], which contains each kit in a form suitable for
-providing physical color information, and [Default Kits.pdf][default-kits],
-which contains a more schematic-like layout of each kit, indicating safe zones
+You can find SVG files containing each of these kits in two forms: [Color
+Previews][color-previews], which presents each kit in a form suitable for
+providing physical color information, and [Production Files][production-files],
+which contain a more schematic-like layout of each kit, indicating safe zones
 etc.
 
 To create a custom keycap project with everything needed to get it into
@@ -216,10 +222,8 @@ for ANSI and ISO-UK layouts):
 * `Base Kit (Hiragana)` — default modifiers and Hiragana sublegends
 * `Base Kit (Ukraine Cyrillic)` — default modifiers and Ukraine Cyrillic sublegends
 * `Base Kit (US International)` — default modifiers and sublegends for US International layouts
-
-<small>*An additional `Base Kit (German)` layout exists, with kitting explicitly
-intended for German keyboard layouts; it is however not suitable for most
-projects, unless you are specifically targeting the German market.</small>
+* `Base Kit (German)` — a base kit with explicit support for German keyboard layouts.
+* `Base Kit (Spanish)` — a base kit with explicit support for Spanish keyboard layouts.
 
 Unless you have specific layouts in mind that require changing the kitting, we
 recommend you choose one of these three default base kits as your base kit, and
@@ -256,10 +260,9 @@ the following generic child kits:
 * `Hiragana JIS Kit` — Hiragana sublegend alpha keys, with additional modifiers
   and short spacebars to support JIS layouts.
 
-Each of these kit diagrams can be found (on a separate artboard) within the file
-[Default Kits.pdf][default-kits]. Note that some of these kits are based on
-newer keycaps which are subject to manufacturing. Check with Keyreative to make
-sure the keys you want to use are available for production.
+Note that some of these kits are based on newer keycaps which are subject to
+manufacturing. Check with Keyreative to make sure the keys you want to use are
+available for production.
 
 ### Colors
 
@@ -487,8 +490,8 @@ separate geometry for each shot, allowing you to render doubleshot keycaps with
 [krk]: https://keyboardrenderkit.readthedocs.io/
 [krk-legends]: https://github.com/kapowaz/kap-legends/blob/main/Designer%20Resources/KRK/
 [keys]: https://github.com/kapowaz/kap-legends/blob/main/Production%20Files/Keys
-[color-previews]: https://github.com/kapowaz/kap-legends/blob/main/Designer%20Resources/Templates/Color%20Previews.pdf
-[default-kits]: https://github.com/kapowaz/kap-legends/blob/main/Designer%20Resources/Templates/Default%20Kits.pdf
+[color-previews]: https://github.com/kapowaz/kap-legends/tree/main/Designer%20Resources/Templates/Color%20Previews
+[production-files]: https://github.com/kapowaz/kap-legends/tree/main/Production%20Files/Kits
 [modifier-legend-lettering]: https://github.com/kapowaz/kap-legends/blob/main/Designer%20Resources/Templates/Modifier%20Legend%20Lettering.pdf
 [tray-sleeve-box]: https://github.com/kapowaz/kap-legends/blob/main/Designer%20Resources/Templates/Tray%20Sleeve%20Box.pdf
 [inter-font]: https://rsms.me/inter/
