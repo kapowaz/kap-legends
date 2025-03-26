@@ -33,7 +33,7 @@
       - "#63CDEE"
       - "#B067FF"
   status: Manufacturing
-  shipping: March 2025
+  shipping: April 2025
 - name: KAP Disconnected Dark
   id: kap-disconnected-dark
   preview: images/sets/kap-disconnected-dark.jpg
@@ -46,6 +46,7 @@
       - "#000000"
       - "#3A39BC"
   status: Manufacturing
+  shipping: April 2025
 - name: KAP Midas
   id: kap-midas
   preview: images/sets/kap-midas-black-alphas.jpg
@@ -58,9 +59,10 @@
       - "#8C724D"
       - "#EBE9E7"
   status: Manufacturing
+  shipping: April 2025
 - name: KAP MV Classic
   id: kap-mv-classic
-  preview: images/sets/kap-mv-classic.jpg
+  preview: images/sets/kap-mv-classic-light.jpg
   designer: kapowaz & maxvoltar
   modifiers: Sublegend Hybrid
   sublegends: Functional
@@ -149,9 +151,25 @@
   modifiers: Default
   sublegends: None
   status: Design
+- name: KAP Super Keycaps
+  id: kap-super-keycaps
+  preview: images/sets/kap-super-keycaps.jpg
+  designer: kapowaz
+  modifiers: Default
+  sublegends: Katakana
+  colors:
+    main: "#C6C0B9"
+    legends:
+      - "#404040"
+      - "#83807C"
+      - "#C1121C"
+      - "#F7BA0B"
+      - "#007243"
+      - "#00387B"
+  status: Colour Matching
 - name: KAP Terrazzo
   id: kap-terrazzo
-  preview: https://i.imgur.com/t8mL3Hd.jpeg
+  preview: images/sets/kap-terrazzo.jpg
   interest_check: https://geekhack.org/index.php?topic=123215.0
   designer: Beesley
   modifiers: Hybrid
@@ -193,6 +211,21 @@
       - "#151E18"
       - "#2C2421"
   status: Design
+- name: KAP Nightscape
+  id: kap-nightscape
+  preview: images/sets/kap-nightscape.jpg
+  designer: keebibi
+  modifiers: Icon/Text Hybrid
+  sublegends: Hangul
+  colors:
+    main: "#000000"
+    legends:
+      - "#eec2ca"
+      - "#d9c2ea"
+      - "#bfd5e9"
+      - "#e9e9e9"
+      - "#565769"
+  status: Design
 - name: KAP Active
   id: kap-active
   preview: images/sets/kap-active.png
@@ -217,18 +250,6 @@
     main: "#141D0C"
     legends:
       - "#B4FF76"
-  status: Design
-- name: KAP Super Keycaps
-  id: kap-super-keycaps
-  preview: images/sets/kap-super-keycaps.png
-  designer: kapowaz
-  modifiers: Default
-  sublegends: Katakana
-  colors:
-    main: "#C6C0B9"
-    legends:
-      - "#404040"
-      - "#83807C"
   status: Design
 - name: KAP Mega Keycaps
   id: kap-mega-keycaps
@@ -312,3 +333,4 @@
       - "#C64E61"
       - "#2CAFA8"
   status: Design
+
