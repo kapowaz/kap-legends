@@ -1,0 +1,390 @@
+---
+sidebar_position: 4
+description: Adding custom novelty keys to your set
+---
+
+import { Kbd } from '@site/src/components/Kbd';
+import { DiscordLink } from '@site/src/components/DiscordLink';
+import noveltiesBasicKitting from './img/novelties-basic-kitting.png';
+import noveltiesR4Kitting from './img/novelties-r4-kitting.png';
+import noveltiesXTKitting from './img/novelties-xt-kitting.png';
+import figmaSelectedControlKey from './img/figma-selected-control-key.png';
+import figmaControlKeyComponentLayers from './img/figma-control-key-component-layers.png';
+import figmaCatNoveltyLayers01 from './img/figma-cat-novelty-layers-01.png';
+import figmaCatFaceFrame from './img/figma-cat-face-frame.png';
+import figmaCatFaceBoolean from './img/figma-cat-face-boolean.png';
+import figmaCatIconLayers from './img/figma-cat-icon-layers.png';
+import figmaSwapInstanceCatIcon from './img/figma-swap-instance-cat-icon.png';
+import figmaCatNoveltyKeycap01 from './img/figma-cat-novelty-keycap-01.png';
+import toleranceLineWidth from './img/tolerance-line-width.png';
+import toleranceRAngle from './img/tolerance-r-angle.png';
+import toleranceInterval from './img/tolerance-interval.png';
+import toleranceEnclosedArea from './img/tolerance-enclosed-area.png';
+import toleranceIconArea from './img/tolerance-icon-area.png';
+import toleranceSafeArea from './img/tolerance-safe-area.png';
+
+# Novelties
+
+To complement your keycap set, you may want to augment it by creating a Novelty
+Kit. This can often significantly increase the appeal of your set, helping to
+reinforce your chosen theme.
+
+## Kitting
+
+If you’re experienced in creating novelty kits you can skip this section, but
+for everyone else here is some guidance on how to approach kitting your novelty
+kit. There are a few main ways people use novelty keys on mechanical keyboards:
+
+1. Replacements for (primarily bottom row) modifiers
+2. Replacement for the R4 Escape key (common on a 60% or 65% layout)
+3. 1u macro keys for ‘XT’-style key clusters, or function row keys
+
+This means your safest bets for keys to include in a novelty kit are:
+
+- R4 1.0u
+- R1 1.0u
+- R1 1.25u
+- R1 1.5u
+- R2 1.75u (i.e. ‘Caps Lock’)
+- R2 2.25u (i.e. ANSI Enter)
+- ISO Enter
+
+Typically for the R1 keys, you should offer one of each size for _each_
+novelty design you offer; if you only have one novelty design for this key,
+offer at least two of each size.
+
+<p align="center">
+  <img
+    src={noveltiesBasicKitting}
+    alt="An example kitting diagram for basic novelties keys"
+    width={459}
+  />
+</p>
+
+For macro keys, there are a couple of different ways of approaching this. You
+can either provide a number of R4 1.0u keys (which would for example allow
+replacing all four keys above the numpad cluster on a 105-key layout), _or_ you
+can provide 1-2 keys per row from R4-R2, and 2-4 keys on R1 (this allows for a
+2x5 arrangement as seen in an XT key cluster). Some users are happy to use
+all-R4 keys in a vertical arrangement for an XT key cluster (as is often done
+with F-row keys), so you could alternatively provide 5-10 R4 1.0u keys to
+achieve the same outcome.
+
+<p align="center">
+  <img
+    src={noveltiesXTKitting}
+    alt="An example kitting diagram for basic novelties keys"
+    width={162}
+  />
+</p>
+
+<p align="center">
+  <img
+    src={noveltiesR4Kitting}
+    alt="An example kitting diagram for basic novelties keys"
+    width={270}
+  />
+</p>
+
+## Custom Keys
+
+The best way of creating your new kit is to start out by finding instances of
+the size and row of keycap you want to use within the KAP Template file, and
+creating a new component based on it. Let’s say for example we want to create a
+R1 1.25u novelty key; first <Kbd mod="meta">Click</Kbd> in the middle of the
+left-most Control key on the bottom row of the Base Kit.
+
+<p align="center">
+  <img
+    src={figmaSelectedControlKey}
+    alt="A kitting diagram from the Base Kit template, with the Inner Edge layer of the keycap selected and highlighted in purple"
+    width={940}
+  />
+</p>
+
+In the left-hand panel you should see a selected layer called _Inner Edge_,
+which sits nested within several other components, leading up to one called
+`R1/Ctrl 1.25 Modifier`. This is the component you want to copy, so select it
+and press <Kbd mod="meta">C</Kbd> to copy it.
+
+<p align="center">
+  <img
+    src={figmaControlKeyComponentLayers}
+    alt="A screenshot of the Figma layers panel, showing the Inner Edge layer selected"
+    width={381}
+  />
+</p>
+
+:::info
+
+Most keys within the KAP Template follow the same overall structure, but a
+couple of them are exceptions to the rule: notably the Escape keys, Enter 2.0
+Vertical key (used in the Numpad) and NumLock key. To make it easier to switch
+between modifier variants for these keys, the instances you will find within the
+Base Kit templates wrap around the actual keycap instance. So for example, the
+Escape Accent key on R4 is called `R4/Esc Accent` but the _actual_ key component
+within it will be called `R4/Esc Icon Accent` (or `R4/Esc Text Accent`, if
+you’ve switched to that variant). If you’re using one of these as the basis for
+a new novelty, ensure you copy the key _inside_ the outer component (e.g.
+`R4/Esc Icon Accent`).
+
+:::
+
+Create a new page within your Figma file by clicking the + icon at the upper
+part of the left-hand panel; give it a name like _Novelties_, then paste your
+target component with <Kbd mod="meta">V</Kbd>. For now this is just another
+ordinary _instance_ of the `R1/Ctrl 1.25u Modifier` component, so let’s turn it
+into a new component, independent of its origins.
+
+To do this, first we want to _Detach Instance_ with <Kbd mod={['option',
+'meta']}>B</Kbd>, then create a new component from it with <Kbd mod={['option',
+'meta']}>K</Kbd>. At this point you should give it a suitable name, following
+the same naming structure, e.g. `R1/Novelty Cat 1.25 Modifier`.
+
+:::tip
+
+By convention, some keycap components will have a suffix of _Modifier_ or
+_Accent_ to denote that they use the Modifier or Accent colors; if you’re
+planning on using Modifier or Accent colors for your novelties, choose the
+appropriate name here. If on the other hand you’re using the same color scheme
+for alpha keys and modifiers, feel free to drop the suffix from your keycap
+component.
+
+:::
+
+Within your newly-created component, the first (and only) thing inside it will
+be an instance of a component `.Generic Keys/Ctrl 1.25`; select it, and as
+before press{' '} <Kbd mod={['option', 'meta']}>B</Kbd> to detach the
+instance, then <Kbd mod={['shift', 'meta']}>G</Kbd> to ungroup its contents.
+Once this is done, you should have something that looks a little like this:
+
+<p align="center">
+  <img
+    src={figmaCatNoveltyLayers01}
+    alt="A screenshot of the Figma layers panel, showing the contents of the new Cat Novelty keycap component"
+    width={381}
+  />
+</p>
+
+You can select each of these items and see how it fits into the component, and
+if you choose to, you can remove them. If however you’re following the standard
+modifier key layout (recommended so your keys fit the overarching aesthetic of
+KAP Legend System) and are planning on substituting the default icon with
+something of your choosing, you should probably keep at least the icon in place
+to use as a placeholder. We’ll discuss how to go about this in the section on
+Icons, below.
+
+## Icons
+
+The standard layout within KAP Legend System keycaps uses an 18×18 frame size
+for icons (although in some special cases, parts of the icon may extend beyond
+the edges of this frame). If you’re creating a novelty which includes text, we
+recommend you start with this same 18×18 frame for your icon; for icon or
+pictographic-only novelty keys, feel free to use whatever size makes sense for
+you.
+
+For now we’ll assume you’re creating a set of novelty keys all of which will
+have the same design, at different sizes (for 1.0u, 1.25u and 1.5u). First,
+create a new frame that will serve as the canvas for your icon by pressing
+&nbsp;<Kbd>F</Kbd> then dragging out an 18×18 frame. In the right-hand panel,
+uncheck _Clip content_, and remove the default Fill color of `#FFFFFF` by
+clicking the minus icon to the right.
+
+<p align="center">
+  <img src={figmaCatFaceFrame} alt="A screenshot of an empty square frame in Figma" width={514} />
+</p>
+
+Now, add an icon within the frame and call it something like `18px/Cat Face`.
+You can draw this however you like (with important consideration to the
+_Tolerances_, discussed below), but you should ensure the icon is grouped within
+a _Boolean Union_ — you do this with <Kbd mod={['shift', 'option']}>U</Kbd> —
+name this union `Icon`, and in the _Appearance_ properties in the right-hand
+panel set the border radius to `0.14`. This will ensure that any sharp edges
+from your design are smoothed out, and that the icon has a consistent fill color
+when substituted for any other icon instance.
+
+:::info
+
+If you’re using Keyreative’s hybrid doubleshot approach and have an icon which
+uses multiple different colors, you can skip the step to group all of your
+icon’s components into a single Boolean union. You should still ensure that each
+layer has a border radius of `0.14`, however.
+
+:::
+
+<p align="center">
+  <img
+    src={figmaCatFaceBoolean}
+    alt="A screenshot of the Figma interface showing a set of layers for the cat icon"
+    width={568}
+  />
+</p>
+
+<p align="center">
+  <img
+    src={figmaCatIconLayers}
+    alt="A screenshot of the Figma interface showing a set of layers for the cat icon"
+    width={381}
+  />
+</p>
+
+You can now convert this icon into a component with <Kbd mod={['option',
+'meta']}>K</Kbd>. Returning to your keycap component, select the component
+instance within it called `18px/Control Symbol`, and then at the top of the
+right-hand panel click _Control Symbol_ to reveal the popover for _Swap
+instance_. From the dropdown within this popover, select _Created in this file_,
+then type `18px/` and the new icon should appear in the popover, so click to
+select it.
+
+<p align="center">
+  <img
+    src={figmaSwapInstanceCatIcon}
+    alt="A screenshot of the Figma interface showing the Swap instance popover"
+    width={510}
+  />
+</p>
+
+Your component should then update, and if you handled the naming and Boolean
+union correctly, the icon will automatically use the existing modifier color —
+this is particularly useful for avoiding the need to update all your instances
+whenever you change their icons.
+
+<p align="center">
+  <img src={figmaCatNoveltyKeycap01} alt="A screenshot of the new Cat Novelty keycap" width={380} />
+</p>
+
+## Modifier Text
+
+:::warning
+
+KAP Legend System makes use of heavily-modified letterforms, which have been
+individually tweaked at different scales to meet engineering constraints. They
+require careful alignment, both to be correctly positioned and to ensure the
+gaps between letters is sufficient for manufacture. As such, there isn’t an
+individual font you can install to create custom text legends of the same
+quality as the default legends. For now, the easiest way to get custom modifier
+text onto a key is to reach out to **kapowaz** on <DiscordLink /> with the
+specific legends you need to be created so they can be supplied to you.
+
+:::
+
+## Tolerances
+
+There are several important engineering tolerances you must stick to when
+creating custom legends — whether they’re icons, custom art or custom text.
+These are important to ensure that your design can be physically manufactured
+and turned into an insert for injection molding. The five key metrics you should
+pay attention to are:
+
+1. **Line width** — the width of individual strokes on letters or icons
+2. **R-angle** — the smallest possible radius of _internal_ corners within a
+   legend
+3. **Interval** — the gap between individual stroked or filled elements within a
+   legend
+4. **Enclosed area** — the size of any internal gaps within legends, e.g. the
+   centre of a letter O
+5. **Icon area** — the relative proportion of the keycap legend that is filled
+
+For each of these tolerances values are listed both in millimetres and pixels,
+the latter being the value you should use in Figma.
+
+### Line width
+
+The width of individual strokes on letters or icons. Note that the standard
+stroke width for icons and most legends is `0.5mm` (`1.42px` in Figma); for
+consistency you should usually aim to use this value for your strokes.
+
+<p align="center">
+  <img src={toleranceLineWidth} alt="Line width tolerance" width={280} />
+</p>
+
+- Ideal: `>0.5mm` / `1.42px`
+- Good: `>0.32mm` / `0.91px`
+- Difficult `>0.22mm` / `0.62px`
+
+Stroke widths below `0.22mm` in thickness might be possible, but should be
+avoided.
+
+### R-Angle
+
+This metric concerns the sharpness of any internal corners on your legend. It is
+best visualised as the corner radius on a sharp point, measured in `mm`. You can test this
+in design tools by checking if a circle with the desired radius can fit snugly
+inside the internal corner, covering the whole area the corner extends into.
+
+<p align="center">
+  <img src={toleranceRAngle} alt="R-angle tolerance" width={280} />
+</p>
+
+- Ideal: `>0.6mm` / `1.7px`
+- Good: `>0.3mm` / `0.85px`
+- Difficult: `>0.1mm` / `0.28px`
+
+Corner radii below `0.1mm` should be avoided.
+
+### Interval
+
+Similar to line width, this is a simple metric for the gap between filled areas
+within a legend. You can test whether your legends meet this requirement by
+creating a circle of the chosen diameter and seing whether there are any places
+within your legend where it can overlap two separate elements of the legend
+simultaneously.
+
+<p align="center">
+  <img src={toleranceInterval} alt="Interval tolerance" width={280} />
+</p>
+
+- Good: `>0.5mm` / `1.42px`
+- Difficult: `>0.3mm` / `0.85px`
+
+Interval gaps of below `0.3mm` between filled areas should be avoided.
+
+### Enclosed Area
+
+To ensure legend molds can be manufactured, the size of non-filled, enclosed
+areas should be above a certain minimum size.
+
+<p align="center">
+  <img src={toleranceEnclosedArea} alt="Enclosed area tolerance" width={280} />
+</p>
+
+- Ideal: `>1mm` / `2.84px`
+- Good: `>0.5mm` / `1.42px`
+- Difficult: `>0.25mm` / `0.71px`
+
+Enclosed areas below `0.25mm` wide between filled areas should be avoided.
+
+#### Icon Area
+
+This relates to the _relative proportion_ of the keycap legend that is filled
+compared to the base keycap color. Provided your legend doesn’t fill a large
+amount of the keycap surface you should be comfortably within this constraint,
+but it should be given consideration to if you have an especially large legend
+for any reason.
+
+<p align="center">
+  <img src={toleranceIconArea} alt="Icon area tolerance" width={280} />
+</p>
+
+- Ideal: `<10%`
+- Good: `<60%`
+- Difficult: `<80%`
+
+### Safe Area
+
+As well as tolerance constraints, custom legends must be a safe distance from
+the edge of the keycap top surface. When creating custom legends you must ensure
+that your legend is no closer than `0.3mm` / `0.85px` to this line.
+
+<p align="center">
+  <img src={toleranceSafeArea} alt="Safe area tolerance" width={280} />
+</p>
+
+You can visualise this safe area within your individual keycap components by
+turning on a (hidden) layer called `Safe Area` within the keycap _Profile_
+sub-component. To find this component, <Kbd mod="meta">Click</Kbd> on the main
+keycap surface to select the layer called `Inner Edge`; the `Safe Area` should
+be immediately below this, but hidden. By default it will be displayed with a
+thin cyan-colored stroke, but to accurately indicate the area your legend cannot
+encroach upon, you should change the Stroke properties to a width of `1.7`, with
+the stroke aligned to the _Inside_ of the layer.

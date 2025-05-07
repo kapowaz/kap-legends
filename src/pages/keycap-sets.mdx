@@ -1,0 +1,32 @@
+---
+title: Projects
+---
+
+import Heading from '@theme-original/MDXComponents/Heading';
+import { projects } from '@site/src/projects';
+import { ProjectPreview } from '@site/src/components/ProjectPreview';
+import { DiscordLink } from '@site/src/components/DiscordLink';
+
+# Keycap Sets
+
+Listed below are the current sets using the KAP Legend System, with details
+about colour scheme, modifier types and sublegends etc. If you are designing
+your own set with KAP Legend System we recommend checking this list to make sure
+it doesn’t overlap too closely with an existing set. This helps increase the
+chances of both sets successfully reaching Minimum Order Quantity.
+
+Designers should always be mindful of the risk of designs overlapping and
+respect that some ideas won’t be possible to pursue, or need to be put to one
+side for a suitable time. We encourage all designers to work in a good faith
+environment of collaboration and encouragement.
+
+If you have a set in production and you’d like to add it to the list, please get
+in touch via <DiscordLink />. Note that these images are illustrative and not
+intended to necessarily represent the kitting or precise colours of the final
+shipping product.
+
+<div id="project-details">
+  {projects.map((project) => (
+    <ProjectPreview key={project.id} {...project} />
+  ))}
+</div>

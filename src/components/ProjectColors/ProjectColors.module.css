@@ -1,0 +1,15 @@
+.projectColor {
+  display: inline-flex;
+  margin: 0;
+  padding: 4px;
+  border-radius: 2px;
+  gap: 4px;
+}
+
+.legendColor {
+  display: inline-flex;
+  height: 12px;
+  width: 12px;
+  border-radius: 12px;
+  margin: 0;
+}

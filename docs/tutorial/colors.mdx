@@ -1,0 +1,136 @@
+---
+sidebar_position: 3
+description: Editing colors within your design
+---
+
+import figmaVariablesKeyColors from './img/figma-variables-key-colors.png';
+import kitColorKey from './img/kit-color-key.png';
+import figmaDuplicateVariableContextMenu from './img/figma-duplicate-variable-context-menu.png';
+
+# Colors
+
+To make an interesting keycap set, you will need to choose a color scheme. This
+can be a fully-involved process with steps including choosing physical colors,
+color matching samples and creating accurate renders. However, before you
+undertake any of that, your first task with a new project template should be to
+set up _representative_ colors to help you visualize your kits and the overall
+theme.
+
+## Variables
+
+The KAP Legend System templates make heavy use of a feature in Figma called
+_variables_. If you’re not familiar with the concept from computer programming,
+you may benefit from reading Figma’s own [documentation on
+variables][figma-variables].
+
+Variables are a way of creating a named _reference_ to a _value_ (in this case:
+a color); you can then use the same named reference in multiple places within a
+Figma file. When the underlying value changes, all places that color is used
+will automatically update, making it much easier to keep your design in sync.
+
+Additionally, Figma allows you to use a variable as the value for _another_
+variable. In the context of the KAP Template, this means that you can define a
+set of named colors (_Dark Beige_, _Light Beige_, _Orange_ etc.) with
+corresponding hexadecimal color values, and then assign those variables to
+other named variables like _Alpha Legend_ (which is the color used for the
+alpha key legends).
+
+## Key Variables
+
+In the template, there are several important variables you will encounter, each
+of which controls the default colors for three different types of keycap:
+Alpha, Modifier and Accent:
+
+- `Keys/Alpha Legend`
+- `Keys/Alpha Base`
+- `Keys/Alpha Highlight`
+- `Keys/Modifier Legend`
+- `Keys/Modifier Base`
+- `Keys/Modifier Highlight`
+- `Keys/Accent Legend`
+- `Keys/Accent Base`
+- `Keys/Accent Highlight`
+
+In each of these the variable ending `Legend` controls the colors of legends on
+this type of keycap, `Base` controls the overall color of the keycap base, and
+`Highlight` controls the shading for the keycap top (in most cases this will be
+either white or black, and may not need to be changed).
+
+<p align="center">
+  <img
+    src={figmaVariablesKeyColors}
+    alt="A screenshot from Figma showing the variables panel"
+    width={642}
+  />
+</p>
+
+From within the variables panel you can click on the assigned color on the right
+for any of these values, and choose any another named color. To create a new
+color you can either click the _+ Create variable_ button at the bottom of the
+panel, or you can right click an existing color and choose _Duplicate variable_
+from the context menu.
+
+:::warning
+
+Note that if you change the underlying color value for a named color, it will
+update _all_ places that color is being used, potentially including places you
+don’t want to update. For that reason it’s usually better to create a new color
+variable, and update specific places to reference that new variable instead.
+
+:::
+
+## Adding colors
+
+If your set doesn’t follow the template’s pattern of alpha, modifier and accent
+keys, you will probably want to create additional color variables to help you
+represent different types of keycap within your set, and to ensure all of these
+update if your colors change.
+
+One of the easiest ways of adding a new color is to simply duplicate an existing
+one, by right-clicking it within the Variables panel:
+
+<p align="center">
+  <img
+    src={figmaDuplicateVariableContextMenu}
+    alt="A screenshot from Figma of the variables panel, showing the context menu action for Duplicate highlighted"
+    width={642}
+  />
+</p>
+
+You can then safely change the underlying color of your new variable without
+affecting anywhere else the existing variable is used. To give yourself even
+more flexibility (and protect against unintentional mistakes) you can also
+create variables that point to other variables, and then assign this indirected
+variable to keycaps when you customise their color.
+
+:::tip
+
+Figma visually groups variables by their name (e.g. _Colors_ and _Keys_ in the
+KAP Template). Using a forward slash as a separator in the name of a variable
+will cause it to be displayed as a visual group, so: `Colors/Mauve` will create
+a color called _Mauve_ which is visually grouped under _Colors_.
+
+:::
+
+## Physical Colors
+
+Once you reach the manufacturing stage, you will need to provide Keyreative with
+a set of production files that show which parts of which keys are what _physical
+color_ (for example: Pantone or RAL color codes). The best way of indicating
+which physical colors your sets use is to update the _Color Key_ in your kit
+diagrams. You can find this within the _Kit Color Codes_ component on the _Kit
+Diagrams_ page.
+
+Once you’ve chosen your physical colors you can double-click on the names within
+the top-right of the component to edit them, and update the swatch to the
+corresponding color variable.
+
+<p align="center">
+  <img
+    src={kitColorKey}
+    alt="A screenshot from Figma of the kit color key part of the Kit Color Codes component"
+    width={530}
+  />
+</p>
+
+[figma-variables]: https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables-in-Figma

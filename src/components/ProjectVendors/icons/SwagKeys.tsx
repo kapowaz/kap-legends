@@ -1,0 +1,11 @@
+import React from 'react';
+
+import type { SVGComponent } from '../../../types';
+import styles from './styles.module.css';
+
+export const SwagKeys: SVGComponent = ({ title = 'SwagKeys', ...props }) => (
+  <svg viewBox="0 0 18 18" {...props} className={styles.icon}>
+    {title && <title>{title}</title>}
+    <path d="M2.98917 9.69855L1.55957 6.18953H5.19855L4.54874 4.5H0.909747L0 6.70939L1.10469 9.69855H2.98917ZM5.58845 11.778L4.28881 8.52888H6.1083L7.14801 11.2581L6.36823 13.4675H2.66425L1.94946 11.778H5.58845ZM8.12275 4.5H6.23828L9.81229 13.4675L10.787 11.1282L8.12275 4.5ZM9.87726 4.5H11.7617L14.426 11.1282L13.4513 13.4675L9.87726 4.5ZM17.0903 4.5H15.2058L14.2961 6.70939L15.2707 8.98376L17.0903 4.5ZM17.0253 8.98376L18 11.2581L17.0253 13.4675L16.1155 11.2581L17.0253 8.98376Z" />
+  </svg>
+);

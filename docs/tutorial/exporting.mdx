@@ -1,0 +1,90 @@
+---
+sidebar_position: 6
+description: Getting your design ready for production
+---
+
+import { Kbd } from '@site/src/components/Kbd';
+import { DiscordLink } from '@site/src/components/DiscordLink';
+import figmaExportKitDiagrams from './img/figma-export-kit-diagrams.png';
+
+# Exporting Production Files
+
+Once you’ve finalised your design and your kitting, you need to generate
+production-ready files for Keyreative to take to manufacture. There are two main
+sets of files you need here:
+
+1. Kit diagrams
+2. Keycap lists
+
+These represent the two important sets of design files Keyreative needs:
+information about which keycaps are included in each kit, and the specific
+quantity of each keycap design, at which row profile and width that your sets
+use. If you have designed custom novelty keycaps, you will also need to provide
+the production design files for these.
+
+## Exporting Kit Diagrams
+
+In your project file in Figma, switch to the _Kit Diagrams_ page. Here, select
+all of the parent frames representing your chosen kits — including any novelty
+kit if you’ve created one — and press <Kbd mod={['shift', 'meta']}>E</Kbd> to
+bring up the Export dialog.
+
+<p align="center">
+  <img
+    src={figmaExportKitDiagrams}
+    alt="A screenshot from Figma showing the Export dialog"
+    width={317}
+  />
+</p>
+
+If you then click the Export button, Figma will generate the various SVG files
+and prompt you to save them locally. Note that, as previously mentioned, since
+these diagrams use a naming convention of `Projects/KAP Template/Kits/Base Kit`,
+the files will be exported to subfolders following this path structure relative
+to your chosen export location; if you haven’t already, you should select all
+these kits and rename them to include your actual project name, as [discussed
+here][rename-kits].
+
+## Exporting Keycap Lists
+
+:::info
+
+<div>
+  The following process requires that you install the KAP Legend System [Figma
+  plugin][figma-plugin-kap-legend-system]. If you’re new to Figma, or not particularly comfortable
+  with the process, feel free to reach out on <DiscordLink /> for assistance.
+</div>
+
+:::
+
+To export keycap lists, you will need to use the KAP Legend System plugin. This
+plugin will generate a CSV file containing all the information Keyreative needs
+to manufacture your keycaps. First, switch to the _Kit Diagrams_ page. Then,
+open the KAP Legend System plugin by typing <Kbd mod="meta">K</Kbd> and typing
+`KAP Legend System` to reveal the plugin in the list of actions. Click on it,
+then click on the _Export Keycap List_ menu item.
+
+Next, select the root frame for each of the kits you want to include in your
+export, by pressing <Kbd mod="shift">Click</Kbd> on each one. You may find it
+easier to do this from the layer list. Every time you update the selection, the
+plugin dialog box will show a loading indicator as it determines which keycaps
+are included in the selected kits — the larger the selection, the longer this
+will take so be prepared for it to take a few seconds to complete.
+
+The dialog box will update to show which kits you have selected, and once you
+are happy you can click the _Export CSV_ button to generate the CSV file and
+save it locally.
+
+## Exporting Custom Keycap Designs
+
+:::info
+
+The KAP Legend System plugin for Figma will eventually be able to help you
+automate this process, but for now if you have custom designs, reach out to us
+on <DiscordLink />.
+
+:::
+
+[rename-kits]: /docs/tutorial/kit-templates#renaming-kit-frames
+[figma-plugin-similayer]: https://www.figma.com/community/plugin/735733267883397781
+[figma-plugin-kap-legend-system]: https://www.figma.com/community/plugin/1499524134518548380/kap-legend-system

@@ -1,0 +1,9 @@
+.icon {
+  height: 18px;
+  width: 18px;
+
+  path {
+    /* stylelint-disable-next-line value-keyword-case */
+    fill: currentColor;
+  }
+}
