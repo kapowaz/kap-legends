@@ -1,0 +1,82 @@
+---
+sidebar_position: 7
+description: Creating a design for the main kit packaging
+---
+
+import { DiscordLink } from '@site/src/components/DiscordLink';
+import traySleeveArt from './img/tray-sleeve-art.png';
+
+# Packaging
+
+The KAP Template includes a set of components that can help you easily produce
+an attractive packaging design for the outer sleeve of your set’s main Base Kit.
+You can update these components within the template file, which will update the
+overall sleeve design.
+
+<p align="center">
+  <img
+    src={traySleeveArt}
+    alt="A diagram illustrating the various areas of the outer sleeve packaging template"
+    width={551}
+  />
+</p>
+
+## Requirements
+
+The packaging template has a specific layout and structure that is intended to
+help customers easily identify KAP Legend System keycap sets and raise brand
+recognition, so elements of the design are common to all KAP sets. As such,
+there are certain parts of the packaging template that can be customised, and
+other parts which should remain relatively unchanged.
+
+1. Update the box sides within the component `Packaging Side` with your kit name
+   (i.e. ‘KAP Your Set Name’). The size and color of this text, the background
+   color and the small logos should not be changed (i.e. they should remain
+   black and white). No additional design elements should be added to the sides.
+   These areas are marked in red on the diagram above.
+2. The colors used for the KAP Legend System logo on the box sides can be
+   adjusted to suit the remainder of the box design. These areas are marked in
+   orange on the diagram above.
+3. The layout and design on the box flaps (`Packaging Outer Flap`) should be
+   unchanged, although the colors (including background) can be adjusted to suit
+   your needs. No additional design elements should be added in this area. These
+   areas are marked in orange on the diagram above.
+4. The lower section of the box top (`Packaging Top`) should be updated to show
+   your kit name, but otherwise the layout and design of this area should be
+   unchanged. Again, you can update the colors as you see fit. This area is
+   marked in orange on the diagram above.
+5. The top section of the box top (`Packaging Top`) can be updated to contain
+   whatever design best fits your needs. This area is marked in green on the
+   diagram above.
+6. The box bottom (`Packaging Bottom`) can contain whatever design suits your
+   needs. Note that an area for a `50mm×40mm` barcode sticker has been included;
+   this should remain on the bottom of the box, although the location can be
+   adjusted to suit your design. This area is marked in green on the diagram
+   above.
+
+In general, the rule of thumb based on the colored areas in the diagram above
+is:
+
+- **Red** — should be unchanged (except for name of set)
+- **Orange** — can have colors customized, but no new design elements
+- **Green** — can be customized according to your needs
+
+:::info
+
+We realize these constraints might seem particularly restrictive, but they exist
+for good reason. As we position the brand of KAP Legend System as a premium
+product in the eyes of customers, it’s important that the product has a
+consistent, high quality appearance that is easily recognisable. If you have a
+box design in mind that doesn’t fit within these constraints, please get in
+touch via <DiscordLink /> to discuss your requirements.
+
+:::
+
+## Exporting
+
+Since Figma only works with RGB colors, in order to create a design that is
+print ready you will need to export the layer `KAP Template Tray Sleeve Box` (it
+is preconfigured to export as SVG), then using another graphic design tool
+create a print-ready PDF using either CMYK or spot colors. When making these
+changes ensure that the dimensions and positioning of elements remain unchanged;
+the base layer of the design should be `398.2mm × 382.3mm`.

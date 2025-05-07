@@ -1,0 +1,215 @@
+---
+sidebar_position: 2
+description: Choose your kit layouts
+---
+
+import { Kbd } from '@site/src/components/Kbd';
+import figmaRenameLayers from './img/figma-rename-layers.png';
+import baseKitGermanSelected from './img/base-kit-german-selected.png';
+import figmaBaseKitPropertiesPanel from './img/figma-base-kit-properties-panel.png';
+import baseKitGermanTextModifiers from './img/base-kit-german-text-modifiers.png';
+
+# Kit Templates
+
+The KAP Template file comes with a large number of kit diagrams which you can
+find in the _Kit Diagrams_ page of the _KAP Template_ Figma file. You shouldn’t
+try to include every one of these kits in your keycap set (ideally you should
+have a maximum of around 6 kits, including a Novelty Kit), so your first task
+should be to reduce this down to just the kits you plan to offer to customers.
+
+## Choosing a Base Kit
+
+The template includes several base kits preconfigured with a default
+Alpha/Modifier/Accent color scheme, using [local variables][color-variables] to
+define their colors. Depending on your project and design goals, you should
+probably delete all but one or two of the base kits. The following kits are
+included by default:
+
+- Default
+- Icon Modifiers
+- Text Modifiers
+- German
+- Spanish
+- Hangul Sublegends
+- Hiragana Sublegends
+- Katakana Sublegends
+- US International
+
+Note that with the exception of the specific _Icon_ and _Text Modifiers_ kits
+all of these base kits are configured to use the default modifiers. If you
+wanted to combine different modifier variants and sublegends (for example, a set
+using Hiragana sublegends with Icon modifiers) you can find details on [how to
+customize your modifiers](#changing-modifiers) and other elements below.
+
+:::info
+
+If you’ve already discussed it with a local vendor, you may want to offer more
+than just the default base kit; for example the German or Spanish Base Kit. Note
+that this usually comes with a reasonably high Minimum Order Quantity.
+
+:::
+
+## Choosing Child Kits
+
+As with base kits, the template includes a large number of potential child kits
+to choose from, most of which you probably won’t include in every project. There
+are two main categories of child kit: language extension kits, and layout
+compatibility kits.
+
+### Language Kits
+
+If you’re planning on shipping the default Base Kit as your primary kit, then
+you might want to offer additional language support through these child kits. We
+offer default child kits for the following locales/languages:
+
+- NorDe Kit (Danish, Finnish, German, Norwegian, Swedish)
+- French Kit (France and Belgium)
+- Spanish Kit (Spain and Latin America)
+- Nordic (German Extension) Kit (Danish, Finnish, Norwegian, Swedish — this only
+  functions as an extension to the German Base Kit)
+- Nordic Kit (Danish, Finnish, Norwegian, Swedish — this functions as an
+  extension to the default Base Kit, but omits German support)
+- Hangul Kit (Korean)
+- US International Kit
+
+We also offer two alphas kits for Hiragana and Katakana sublegends; note that
+these do not provide JIS compatibility, but instead are offered as stylistic
+alternatives to the alphas in the default Base Kit (a full JIS base kit layout
+will be added at a later date).
+
+:::info
+
+If you’re planning on offering Nordic language support, pay particular attention
+to the combination of Base Kit and child kit you offer; generally you should be
+offering one combination of:
+
+- Base Kit + NorDe Kit
+- Base Kit (German) + Nordic (German Extension) Kit
+- Base Kit + Nordic Kit (to support Nordic languages except German)
+
+If in doubt, talk about your plans with your preferred vendor for that region.
+
+:::
+
+### Layout Compatibility Kits
+
+These kits are to offer support for less common layouts for which physical keys
+aren’t included in the Base Kits; The Mac Kit can be quite popular, offering
+important alternate modifier keys as well as some other keys needed for Mac
+users. The 40s kit provides a more comprehensive set of keys to support 40% and
+some ortholinear keyboards with a larger number of 1u and smaller modifier keys.
+
+- 40s Kit
+- Mac Kit
+- Spacebars Kit
+
+### Renaming Kit Frames
+
+The default kit diagrams are all follow this naming convention: `Projects/KAP
+Template/Kits/<Kit Name>`; this structure — of forward slashes separating parts
+of the name — is used internally by Figma when exporting assets (such as the
+final kit diagram PDFs), and so you will want to replace `KAP Template` with the
+project name you chose previously. To apply this to all the kit diagrams, select
+all with <Kbd mod="meta">A</Kbd>, then press <Kbd mod="meta">R</Kbd> to open the
+Rename Layers dialog. From here, type `KAP Template` into the first field, and
+your chosen project name in the second field:
+
+<p align="center">
+  <img src={figmaRenameLayers} alt="A screenshot of Figma’s rename layers dialog" width={479} />
+</p>
+
+## Customizing
+
+Once you’ve decided which basic kits you’re intending to offer, it’s time to
+start customizing them to fit your needs. There are no hard rules here, and your
+design will dictate which keycaps you want to offer, but here are some common
+scenarios you might encounter, and how to approach them.
+
+### Changing Modifiers
+
+Templates for the Base Kit are provided with all three modifier variants, but if
+you’re starting out with one of the other base kits and you _don’t_ want to
+offer the default icon and text modifiers, you will need to update your chosen
+kit to use the alternate modifiers.
+
+:::warning
+
+When you change between the default kit setup and variants for things like
+modifiers Figma will replace some component instances, which means you may need
+to manually update the colour variables to reference the local variables (which
+start `Keys/`) from their defaults (which start `Template/`). You can use the
+Find & replace variables plugin to automate this, or you can manually update the
+colors by clicking their respective dropdowns in _Selection colors_ in the right
+side panel. You can read more about [how Figma color variables are used
+here](/docs/tutorial/colors#key-variables).
+
+:::
+
+To illustrate by example, let’s say you want to take the _Base Kit (German)_ and
+use Text-only modifiers. First, select the actual Base Kit component instance
+within the root frame `Projects/KAP Template/Kits/Base Kit (German)` by
+double-clicking on the keycaps in the centre of the diagram:
+
+<p align="center">
+  <img src={baseKitGermanSelected} alt="A kit diagram of the German Base Kit" width={710} />
+</p>
+
+With this component instance selected, the right-hand panel should now reveal a
+(large!) number of properties which can be used to customize the specific
+keycaps it includes:
+
+<p align="center">
+  <img
+    src={figmaBaseKitPropertiesPanel}
+    alt="A screenshot of the Base Kit (German) component properties in Figma"
+    width={388}
+  />
+</p>
+
+To change the kit to use Text-only modifiers, you will need to update the
+following properties to these values from their respective dropdowns:
+
+- **Kits/Base Kit > R4 1.0u Backspace**: R4/Backspace 1.0 Text Modifier
+- **R4/Esc Modifier > Legend**: Text
+- **Other Modifiers > Modifiers**: Text
+- **Extra Paging Keys > Legends**: Text
+- **Numeric Keys > NumLock**: R4/NumLock 1.0 Text Modifier
+- **Numeric Keys > NumEnter**: R1/NumEnter 2.0V Text Modifier
+- **Numeric Keys > NumEnter Accent**: R1/NumEnter 2.0V Text Accent
+- **Home Cluster > Legends**: Text
+- **R4/Esc Accent > Legend**: Text
+- **Modifiers > Modifiers**:
+
+With these changes you should now have a fully-updated base kit, using only text
+modifiers where previously they were icon or icon and text:
+
+<p align="center">
+  <img
+    src={baseKitGermanTextModifiers}
+    alt="A screenshot of the Base Kit (German) kit diagram, updated to use text-only modifiers"
+    width={900}
+  />
+</p>
+
+:::info
+
+A full tutorial about components is beyond the scope of this documentation, but
+you can [read more about them][figma-components] on Figma’s documentation site.
+
+:::
+
+### Changing Sublegends
+
+:::warning
+
+The process for changing the sublegends on an existing kit currently relies on
+changing individual keycap component instances manually. At present this can’t
+be done without access to all the KAP Figma libraries, including some which are
+currently private. For now, if the default sublegend kits don’t meet your
+kitting needs, reach out to us on Discord to discuss what you’re trying to
+achieve.
+
+:::
+
+[color-variables]: /docs/tutorial/colors#key-variables
+[figma-components]: https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-components-in-Figma

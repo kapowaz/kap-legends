@@ -1,0 +1,113 @@
+---
+sidebar_position: 1
+description: Your first KAP Legend System project
+---
+
+import { DiscordLink } from '@site/src/components/DiscordLink';
+import figmaDuplicateContextMenu from './img/figma-duplicate-context-menu.png';
+import figmaVariablesIcon from './img/figma-variables-icon.png';
+import figmaVariablesPanelProjectName from './img/figma-variables-panel-project-name.png';
+
+# Getting Started
+
+The best way to design and manage keycap sets made with KAP Legend System is
+using [Figma][figma]. This is what we use to build the legends, keycaps, kits
+and templates internally, and you will benefit from all the same internal tools
+and workflows we have when you use Figma to build your sets.
+
+:::info
+
+Figma is a cross-platform collaboration-oriented design tool that runs either
+from a desktop application or a modern web browser; if you don’t already have an
+account you can [create a basic account for free][figma-signup].
+
+:::
+
+## Recommended Plugins
+
+Figma can extend its functionality with third-party plugins; several of these
+are particularly useful when working with KAP templates. You can install them by
+visiting their community pages, linked below.
+
+- [KAP Legend System][figma-plugin-kap-legend-system]: you will need this plugin
+  to export keycap lists for production.
+- [Automator][figma-plugin-automator]: allows you to perform the same action to
+  each of a set of different selected layers, such as changing alignment,
+  boolean operations and adding a frame around each layer
+- [Similayer][figma-plugin-similayer]: makes selecting all objects within a
+  frame (or the whole page) matching certain properties very easy. Essential for
+  selecting keycap component instances or their constituent parts
+- [Sort Layers][figma-plugin-sort-layers]: useful for sorting a large number of
+  layers by name, which can be very helpful in some scenarios, such as exporting
+- [Find & replace variables][figma-plugin-find-replace-variables] (non-free):
+  extremely useful for changing all references to a particular variable (or set
+  of variables, by name) to another variable. It can save a lot of time for
+  repetitive tasks (you can install it and use it 3 times for free to try it
+  out).
+
+## Requesting Access
+
+Once you’ve created a Figma account, there are two template files you will need
+access to: you can visit these URLs to request permission to view them
+
+- [KAP Production Templates][kap-production-templates]
+- [KAP Template][kap-template]
+
+The first of these contains many of the shared components you’ll need (which
+will allow you to customise your template), but the second file is the most
+important one: this is a template for an individual keycap set project. You
+don’t need Edit access to these files; you will make all your changes in your
+own copy of the KAP Template file.
+
+:::tip
+
+If you’re having trouble getting access to the template files, ask on <DiscordLink />.
+
+:::
+
+## Setting up a new project
+
+Once you have access, Duplicate the file `KAP Template` Your new file will be
+given the name `KAP Template (Copy)` — you can rename it from the same context
+menu, directly below _Duplicate_.
+
+<p align="center">
+  <img
+    src={figmaDuplicateContextMenu}
+    alt="A screenshot from Figma showing the contextual menu to Duplicate a file"
+    width={390}
+  />
+</p>
+
+Give it an appropriate name (i.e. `KAP My Project`), then open the Local
+variables by clicking the sliders icon in the right hand panel:
+
+<p align="center">
+  <img
+    src={figmaVariablesIcon}
+    alt="A screenshot from Figma showing the location of the Local variables icon"
+    width={259}
+  />
+</p>
+
+From here, double click on the text _KAP Template_ alongside Project Name, and
+enter your chosen name. This will update all instances within the document where
+the project name appears, including the cover page and packaging templates.
+
+<p align="center">
+  <img
+    src={figmaVariablesPanelProjectName}
+    alt="A screenshot from Figma showing the variables panel"
+    width={642}
+  />
+</p>
+
+[figma]: https://www.figma.com
+[figma-signup]: https://www.figma.com/signup
+[figma-plugin-automator]: https://www.figma.com/community/plugin/950514102619019349
+[figma-plugin-similayer]: https://www.figma.com/community/plugin/735733267883397781
+[figma-plugin-sort-layers]: https://www.figma.com/community/plugin/767379414704079825
+[figma-plugin-find-replace-variables]: https://www.figma.com/community/plugin/1415619314028200863
+[figma-plugin-kap-legend-system]: https://www.figma.com/community/plugin/1499524134518548380/kap-legend-system
+[kap-template]: https://www.figma.com/design/d1NM2ld2x3zaM1i2uLwEp9/KAP-Template?node-id=0-1&p=f&t=7oZ9Imk88FTQhBfX-0
+[kap-production-templates]: https://www.figma.com/design/bj80AAmAjshh6CV8cr5fPC/KAP-Production-Templates?node-id=0-1&p=f&t=s0yzB7fzgUOm235y-0
