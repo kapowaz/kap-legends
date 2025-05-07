@@ -18,7 +18,6 @@
 .projectMeta dt {
   grid-column-start: title;
   font-weight: 500;
-  color: white;
   margin: 0;
 }
 
