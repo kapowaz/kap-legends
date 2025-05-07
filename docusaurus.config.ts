@@ -10,9 +10,9 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  // url: 'https://kap-legends.kapowaz.industries',
+  url: 'https://kap-legends.kapowaz.industries',
   // use this for test deployments
-  url: 'https://friendly-brioche-c8320b.netlify.app',
+  // url: 'https://friendly-brioche-c8320b.netlify.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
