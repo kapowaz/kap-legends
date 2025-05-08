@@ -45,6 +45,7 @@
   --infoblue-contrast-dark: rgba(25, 50, 71, 1);
   --ifm-color-info-contrast-foreground: var(--infoblue-contrast-dark);
   --ifm-color-info-contrast-background: var(--infoblue-contrast-light);
+  --ifm-link-color: var(--ifm-color-primary-darkest);
 }
 
 html[data-theme='dark'] {
@@ -60,6 +61,7 @@ html[data-theme='dark'] {
   --color-blueprint-diagram: var(--blue-50);
   --ifm-color-info-contrast-foreground: var(--infoblue-contrast-light);
   --ifm-color-info-contrast-background: var(--infoblue-contrast-dark);
+  --ifm-link-color: var(--ifm-color-primary);
 }
 
 h1,
