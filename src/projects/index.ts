@@ -193,11 +193,11 @@ export const projects: Array<IProject> = [
       //   name: 'CannonKeys',
       //   url: 'https://cannonkeys.com/products/kap-generation',
       // },
-      // {
-      //   region: 'UK',
-      //   name: 'MechMods',
-      //   url: 'https://www.mechmods.co.uk/collections/keycaps',
-      // },
+      {
+        region: 'UK',
+        name: 'MechMods',
+        url: 'https://www.mechmods.co.uk/products/kap-disconnected-dark-pbt-keycaps-1',
+      },
       {
         region: 'Spain',
         name: 'EloquentClicks',
