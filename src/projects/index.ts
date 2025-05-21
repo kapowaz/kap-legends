@@ -188,11 +188,11 @@ export const projects: Array<IProject> = [
         name: 'MonacoKeys',
         url: 'https://monacokeys.de/en/collections/cherry-profile-keycap-sets/products/monacokeys-kap-disconnected-dark-keycap-set',
       },
-      // {
-      //   region: 'US',
-      //   name: 'CannonKeys',
-      //   url: 'https://cannonkeys.com/products/kap-generation',
-      // },
+      {
+        region: 'US',
+        name: 'CannonKeys',
+        url: 'https://cannonkeys.com/products/kap-disconnected-dark/',
+      },
       {
         region: 'UK',
         name: 'MechMods',
