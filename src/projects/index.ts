@@ -99,6 +99,7 @@ import previewImageWhiteRabbit from './images/kap-white-rabbit.png';
 import previewImageYaroze from './images/kap-yaroze.jpg';
 import previewImageY from './images/kap-y.jpg';
 import previewImageGlyphEdius from './images/kap-glyph-edius.jpg';
+import previewImageGreyAlert from './images/kap-grey-alert.jpg';
 
 export const projects: Array<IProject> = [
   {
@@ -188,11 +189,11 @@ export const projects: Array<IProject> = [
         name: 'MonacoKeys',
         url: 'https://monacokeys.de/en/collections/cherry-profile-keycap-sets/products/monacokeys-kap-disconnected-dark-keycap-set',
       },
-      // {
-      //   region: 'US',
-      //   name: 'CannonKeys',
-      //   url: 'https://cannonkeys.com/products/kap-generation',
-      // },
+      {
+        region: 'US',
+        name: 'CannonKeys',
+        url: 'https://cannonkeys.com/products/kap-disconnected-dark/',
+      },
       {
         region: 'UK',
         name: 'MechMods',
@@ -432,6 +433,19 @@ export const projects: Array<IProject> = [
     colors: {
       main: '#a19d92',
       legends: ['#000000', '#909bd9', '#ae6b7c', '#e5c02b', '#7d796d', '#368d8c'],
+    },
+    status: 'Design',
+  },
+  {
+    name: 'KAP Grey Alert',
+    id: 'kap-grey-alert',
+    previewImage: previewImageGreyAlert,
+    designer: 'KasperL',
+    modifiers: 'Default',
+    sublegends: 'None',
+    colors: {
+      main: '#434344',
+      legends: ['#FFFFFF', '#7b2b28'],
     },
     status: 'Design',
   },
