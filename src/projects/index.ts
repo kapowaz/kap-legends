@@ -17,6 +17,7 @@ type ProjectSublegends =
   | 'Icon';
 
 export type VendorName =
+  | 'Aiglatson Studio'
   | 'Angry Miao'
   | 'Ashkeebs'
   | 'Bowl Keyboards'
@@ -37,6 +38,7 @@ export type VendorName =
   | 'Keygem'
   | 'Keyreative'
   | 'ktechs'
+  | 'MaxGaming'
   | 'MechMods'
   | 'MonacoKeys'
   | 'Monokei'
@@ -44,6 +46,7 @@ export type VendorName =
   | 'ProtoTypist'
   | 'Protozoa'
   | 'Rheset'
+  | 'Sanyo'
   | 'SwagKeys'
   | 'SwitchKeys'
   | 'TORO Studio'

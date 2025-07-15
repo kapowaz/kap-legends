@@ -4,6 +4,7 @@ import styles from './ProjectVendors.module.css';
 import type { SVGComponent } from '@site/src/types';
 import { AngryMiao } from './icons/AngryMiao';
 import {
+  Aiglatson,
   Ashkeebs,
   BowlKeyboards,
   CandyKeys,
@@ -23,6 +24,7 @@ import {
   Keygem,
   Keyreative,
   Ktechs,
+  MaxGaming,
   MechMods,
   MonacoKeys,
   Monokei,
@@ -30,6 +32,7 @@ import {
   ProtoTypist,
   Protozoa,
   Rheset,
+  Sanyo,
   SwagKeys,
   SwitchKeys,
   TOROStudio,
@@ -39,6 +42,7 @@ import {
 } from './icons';
 
 const VendorIcons: Record<VendorName, SVGComponent> = {
+  ['Aiglatson Studio']: Aiglatson,
   ['Angry Miao']: AngryMiao,
   ['Bowl Keyboards']: BowlKeyboards,
   ['Ashkeebs']: Ashkeebs,
@@ -59,6 +63,7 @@ const VendorIcons: Record<VendorName, SVGComponent> = {
   ['Keygem']: Keygem,
   ['Keyreative']: Keyreative,
   ['ktechs']: Ktechs,
+  ['MaxGaming']: MaxGaming,
   ['MechMods']: MechMods,
   ['MonacoKeys']: MonacoKeys,
   ['Monokei']: Monokei,
@@ -66,6 +71,7 @@ const VendorIcons: Record<VendorName, SVGComponent> = {
   ['ProtoTypist']: ProtoTypist,
   ['Protozoa']: Protozoa,
   ['Rheset']: Rheset,
+  ['Sanyo']: Sanyo,
   ['SwagKeys']: SwagKeys,
   ['SwitchKeys']: SwitchKeys,
   ['TORO Studio']: TOROStudio,
