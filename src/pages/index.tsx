@@ -14,7 +14,7 @@ function HomepageHeader() {
           role="img"
           height={222}
           width={216}
-          alt="KAP Legend System logo"
+          title="KAP Legend System logo"
           className={styles.heroLogo}
         />
 

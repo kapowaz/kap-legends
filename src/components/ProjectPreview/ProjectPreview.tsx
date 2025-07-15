@@ -72,7 +72,6 @@ export const ProjectPreview = ({
             <dd>
               <ProjectVendors vendors={vendors} />
             </dd>
-            <dd>{shipping}</dd>
           </>
         )}
       </dl>
