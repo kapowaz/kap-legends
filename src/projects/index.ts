@@ -104,6 +104,69 @@ import previewImageY from './images/kap-y.jpg';
 import previewImageGlyphEdius from './images/kap-glyph-edius.jpg';
 import previewImageGreyAlert from './images/kap-grey-alert.jpg';
 
+const KAP_MV_CLASSIC_VENDORS: ProjectVendor[] = [
+  {
+    region: 'US',
+    name: 'CannonKeys',
+    url: 'https://cannonkeys.com/products/kap-mv-classic',
+  },
+  {
+    region: 'EU',
+    name: 'MonacoKeys',
+    url: 'https://monacokeys.de/en/collections/keycaps/products/kap-mv-classic-double-shot-pbt-keycap-set',
+  },
+  {
+    region: 'UK',
+    name: 'ProtoTypist',
+    url: 'https://prototypist.net/products/group-buy-kap-mv-classic',
+  },
+  {
+    region: 'Spain',
+    name: 'EloquentClicks',
+    url: 'https://eloquentclicks.com/collections/pbt-keycaps/products/kap-mv-classic-keycaps',
+  },
+  {
+    region: 'Korea',
+    name: 'SwagKeys',
+    url: 'https://swagkeys.com/products/kap-mv-classic',
+  },
+  {
+    region: 'Japan',
+    name: 'Sanyo',
+    url: 'https://sanyollc.com/search?q=kap&options%5Bprefix%5D=last',
+  },
+  {
+    region: 'China',
+    name: 'Keyreative',
+    url: 'https://keyreative.store/products/kap-mv-classic-keycaps',
+  },
+  {
+    region: 'China',
+    name: 'zFrontier',
+    url: 'https://en.zfrontier.com/products/pre-order-kap-mv-classic',
+  },
+  {
+    region: 'Singapore',
+    name: 'ktechs',
+    url: 'https://ktechs.store/products/kap-mv-classic',
+  },
+  {
+    region: 'Oceania',
+    name: 'Keebz n Cables',
+    url: 'https://www.keebzncables.com/products/kap-mv-classic-keycaps',
+  },
+  {
+    region: 'Thailand',
+    name: 'Aiglatson Studio',
+    url: 'https://aiglatsonstudio.com/search?q=kap&type=product',
+  },
+  {
+    region: 'Europe',
+    name: 'MaxGaming',
+    url: 'https://www.maxgaming.com/search?q=kap',
+  },
+];
+
 export const projects: Array<IProject> = [
   {
     name: 'KAP Generation',
@@ -286,8 +349,70 @@ export const projects: Array<IProject> = [
       main: '#000000',
       legends: ['#FFFFFF', '#FF675D', '#FEBC4A', '#6CEE2B', '#63CDEE', '#B067FF'],
     },
-    status: 'Manufacturing',
-    shipping: 'July 2025',
+    status: 'Pre-order',
+    shipping: 'August 2025',
+    vendors: [
+      {
+        region: 'US',
+        name: 'CannonKeys',
+        url: 'https://cannonkeys.com/products/kap-wob',
+      },
+      {
+        region: 'EU',
+        name: 'MonacoKeys',
+        url: 'https://monacokeys.de/en/collections/keycaps/products/kap-white-on-black-double-shot-pbt-keycap-set',
+      },
+      {
+        region: 'UK',
+        name: 'ProtoTypist',
+        url: 'https://prototypist.net/products/pre-order-kap-wob-keyset',
+      },
+      {
+        region: 'Spain',
+        name: 'EloquentClicks',
+        url: 'https://eloquentclicks.com/collections/keycaps/products/kap-wob-keycaps',
+      },
+      {
+        region: 'Korea',
+        name: 'SwagKeys',
+        url: 'https://swagkeys.com/search?q=kap',
+      },
+      {
+        region: 'Japan',
+        name: 'Sanyo',
+        url: 'https://sanyollc.com/products/keyreative-wob-keycaps',
+      },
+      {
+        region: 'China',
+        name: 'Keyreative',
+        url: 'https://keyreative.store/products/kap-wob-cherry-profile-keycaps',
+      },
+      {
+        region: 'China',
+        name: 'zFrontier',
+        url: 'https://en.zfrontier.com/products/pre-order-kap-wob-white-on-black',
+      },
+      {
+        region: 'Singapore',
+        name: 'ktechs',
+        url: 'https://ktechs.store/products/kap-wob',
+      },
+      {
+        region: 'Oceania',
+        name: 'Keebz n Cables',
+        url: 'https://www.keebzncables.com/products/pre-order-kap-wob',
+      },
+      {
+        region: 'Thailand',
+        name: 'Aiglatson Studio',
+        url: 'https://aiglatsonstudio.com/search?q=kap&type=product',
+      },
+      {
+        region: 'Europe',
+        name: 'MaxGaming',
+        url: 'https://www.maxgaming.com/search?q=kap',
+      },
+    ],
   },
   {
     name: 'KAP MV Classic Light',
@@ -309,7 +434,9 @@ export const projects: Array<IProject> = [
         '#885595',
       ],
     },
-    status: 'Colour Matching',
+    status: 'Pre-order',
+    shipping: 'August 2025',
+    vendors: KAP_MV_CLASSIC_VENDORS,
   },
   {
     name: 'KAP MV Classic Dark',
@@ -331,7 +458,9 @@ export const projects: Array<IProject> = [
         '#906D97',
       ],
     },
-    status: 'Colour Matching',
+    status: 'Pre-order',
+    shipping: 'August 2025',
+    vendors: KAP_MV_CLASSIC_VENDORS,
   },
   {
     name: 'KAP Yarōze',
@@ -345,20 +474,6 @@ export const projects: Array<IProject> = [
       legends: ['#2E2E2E', '#404040'],
     },
     status: 'Colour Matching',
-  },
-  {
-    name: 'KAP Theatrum Orbis Terrarum',
-    id: 'kap-tot',
-    previewImage: previewImageTot,
-    interestCheckUrl: 'https://geekhack.org/index.php?topic=124263.0',
-    designer: 'Keepo',
-    colors: {
-      main: '#aaa69d',
-      legends: ['#000000', '#3b282a', '#2d2f3c', '#343e36', '#817366'],
-    },
-    modifiers: 'Text',
-    sublegends: 'None',
-    status: 'Design',
   },
   {
     name: 'KAP Technocraft',
@@ -387,20 +502,6 @@ export const projects: Array<IProject> = [
     status: 'Colour Matching',
   },
   {
-    name: 'KAP Terrazzo',
-    id: 'kap-terrazzo',
-    previewImage: previewImageTerrazzo,
-    interestCheckUrl: 'https://geekhack.org/index.php?topic=123215.0',
-    designer: 'Beesley',
-    modifiers: 'Hybrid',
-    sublegends: 'None',
-    colors: {
-      main: '#FDFAF6',
-      legends: ['#637C7D', '#B17F5C'],
-    },
-    status: 'Colour Matching',
-  },
-  {
     name: 'KAP Retro Lights R2',
     id: 'kap-retro-lights-r2',
     previewImage: previewImageRetroLightsR2,
@@ -412,6 +513,7 @@ export const projects: Array<IProject> = [
       legends: ['#000000', '#25bd59', '#048cd8', '#ffbf3f', '#ff665e', '#a564b6', '#ab60bd'],
     },
     status: 'Colour Matching',
+    shipping: 'October 2025',
   },
   {
     name: 'KAP Y',
@@ -582,4 +684,42 @@ export const projects: Array<IProject> = [
     },
     status: 'Design',
   },
+  {
+    name: 'KAP Theatrum Orbis Terrarum',
+    id: 'kap-tot',
+    previewImage: previewImageTot,
+    interestCheckUrl: 'https://geekhack.org/index.php?topic=124263.0',
+    designer: 'Keepo',
+    colors: {
+      main: '#aaa69d',
+      legends: ['#000000', '#3b282a', '#2d2f3c', '#343e36', '#817366'],
+    },
+    modifiers: 'Text',
+    sublegends: 'None',
+    status: 'On hold',
+  },
+  {
+    name: 'KAP Terrazzo',
+    id: 'kap-terrazzo',
+    previewImage: previewImageTerrazzo,
+    interestCheckUrl: 'https://geekhack.org/index.php?topic=123215.0',
+    designer: 'Beesley',
+    modifiers: 'Hybrid',
+    sublegends: 'None',
+    colors: {
+      main: '#FDFAF6',
+      legends: ['#637C7D', '#B17F5C'],
+    },
+    status: 'On hold',
+  },
 ];
+
+/**
+ * Other projects:
+ *
+ * KAP Anushirvan (originally GMK? https://geekhack.org/index.php?topic=123225.0)
+ * KAP Santa Llum https://cord-screen-96a.notion.site/KAP-Santa-LLum-21b889ba936e80a2929cf18efa8527c0
+ * KAP Buff Bride
+ * KAP Reboot Wolf
+ * KAP One Dark
+ */
