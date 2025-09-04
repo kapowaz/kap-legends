@@ -5,7 +5,8 @@ type ProjectModifierType =
   | 'Text'
   | 'Sublegend Hybrid'
   | 'Icon/Text Hybrid'
-  | 'Text Hybrid';
+  | 'Text Hybrid'
+  | 'Icon Alternate';
 
 type ProjectSublegends =
   | 'None'
@@ -63,7 +64,7 @@ export interface ProjectVendor {
 export interface IProject {
   name: string;
   id: string;
-  previewImage: string;
+  previewImages: string[];
   interestCheckUrl?: string;
   designer: string;
   materials?: string;
@@ -78,7 +79,7 @@ export interface IProject {
   vendors?: ProjectVendor[];
 }
 
-import previewImageCode from './images/kap-code.png';
+import previewImageOneDark from './images/kap-one-dark.jpg';
 import previewImageActive from './images/kap-active.png';
 import previewImageCalculator from './images/kap-calculator.jpg';
 import previewImageDisconnectedDark from './images/kap-disconnected-dark.jpg';
@@ -100,9 +101,16 @@ import previewImageTot from './images/kap-tot.jpg';
 import previewImageWhiteOnBlack from './images/kap-white-on-black.jpg';
 import previewImageWhiteRabbit from './images/kap-white-rabbit.png';
 import previewImageYaroze from './images/kap-yaroze.jpg';
+import previewImageYarozeNovelties from './images/kap-yaroze-novelties.jpg';
 import previewImageY from './images/kap-y.jpg';
 import previewImageGlyphEdius from './images/kap-glyph-edius.jpg';
 import previewImageGreyAlert from './images/kap-grey-alert.jpg';
+import previewImageMatchpoint from './images/kap-matchpoint.jpg';
+import previewImageRebootWolf from './images/kap-reboot-wolf.jpg';
+import previewImageScuderiaTurismo from './images/kap-scuderia-turismo.jpg';
+import previewImageBuffBride from './images/kap-buff-bride.jpg';
+import previewImageSantaLlumNaixement from './images/kap-santa-llum-naixement.jpg';
+import previewImageSantaLlumResurreccio from './images/kap-santa-llum-resurreccio.jpg';
 
 const KAP_MV_CLASSIC_VENDORS: ProjectVendor[] = [
   {
@@ -171,14 +179,14 @@ export const projects: Array<IProject> = [
   {
     name: 'KAP Generation',
     id: 'kap-generation',
-    previewImage: previewImageGeneration,
+    previewImages: [previewImageGeneration],
     interestCheckUrl: 'https://geekhack.org/index.php?topic=124004.0',
     designer: 'kapowaz',
     materials: 'ABS/PBT',
     modifiers: 'Default',
     sublegends: 'None',
     colors: { main: '#3C1F1B', legends: ['#DD7869'] },
-    status: 'Shipping',
+    status: 'Shipped',
     vendors: [
       {
         region: 'EU',
@@ -240,7 +248,7 @@ export const projects: Array<IProject> = [
   {
     name: 'KAP Disconnected Dark',
     id: 'kap-disconnected-dark',
-    previewImage: previewImageDisconnectedDark,
+    previewImages: [previewImageDisconnectedDark],
     designer: 'KasperL',
     modifiers: 'Hybrid',
     sublegends: 'None',
@@ -248,7 +256,7 @@ export const projects: Array<IProject> = [
       main: '#666666',
       legends: ['#000000', '#3A39BC'],
     },
-    status: 'Shipping',
+    status: 'Shipped',
     vendors: [
       {
         region: 'EU',
@@ -295,7 +303,7 @@ export const projects: Array<IProject> = [
   {
     name: 'KAP Midas',
     id: 'kap-midas',
-    previewImage: previewImageMidas,
+    previewImages: [previewImageMidas],
     designer: 'Manu',
     modifiers: 'Text',
     sublegends: 'None',
@@ -303,7 +311,7 @@ export const projects: Array<IProject> = [
       main: '#000000',
       legends: ['#8C724D', '#EBE9E7'],
     },
-    status: 'Shipping',
+    status: 'Shipped',
     vendors: [
       {
         region: 'EU',
@@ -340,7 +348,7 @@ export const projects: Array<IProject> = [
   {
     name: 'KAP White on Black',
     id: 'kap-white-on-black',
-    previewImage: previewImageWhiteOnBlack,
+    previewImages: [previewImageWhiteOnBlack],
     designer: 'kapowaz',
     materials: 'PBT',
     modifiers: 'Default',
@@ -349,8 +357,7 @@ export const projects: Array<IProject> = [
       main: '#000000',
       legends: ['#FFFFFF', '#FF675D', '#FEBC4A', '#6CEE2B', '#63CDEE', '#B067FF'],
     },
-    status: 'Pre-order',
-    shipping: 'August 2025',
+    status: 'Shipped',
     vendors: [
       {
         region: 'US',
@@ -417,7 +424,7 @@ export const projects: Array<IProject> = [
   {
     name: 'KAP MV Classic Light',
     id: 'kap-mv-classic-light',
-    previewImage: previewImageMvClassicLight,
+    previewImages: [previewImageMvClassicLight],
     designer: 'kapowaz & maxvoltar',
     modifiers: 'Sublegend Hybrid',
     sublegends: 'Functional',
@@ -435,13 +442,13 @@ export const projects: Array<IProject> = [
       ],
     },
     status: 'Pre-order',
-    shipping: 'August 2025',
+    shipping: 'Late 2025',
     vendors: KAP_MV_CLASSIC_VENDORS,
   },
   {
     name: 'KAP MV Classic Dark',
     id: 'kap-mv-classic-dark',
-    previewImage: previewImageMvClassicDark,
+    previewImages: [previewImageMvClassicDark],
     designer: 'kapowaz & maxvoltar',
     modifiers: 'Sublegend Hybrid',
     sublegends: 'Functional',
@@ -459,52 +466,27 @@ export const projects: Array<IProject> = [
       ],
     },
     status: 'Pre-order',
-    shipping: 'August 2025',
+    shipping: 'Late 2025',
     vendors: KAP_MV_CLASSIC_VENDORS,
   },
   {
-    name: 'KAP Yarōze',
-    id: 'kap-yaroze',
-    previewImage: previewImageYaroze,
-    designer: 'kapowaz',
-    modifiers: 'Default',
-    sublegends: 'Hiragana',
+    name: 'KAP Theatrum Orbis Terrarum',
+    id: 'kap-tot',
+    previewImages: [previewImageTot],
+    interestCheckUrl: 'https://geekhack.org/index.php?topic=124263.0',
+    designer: 'Keepo',
     colors: {
-      main: '#1E1E1E',
-      legends: ['#2E2E2E', '#404040'],
+      main: '#aaa69d',
+      legends: ['#000000', '#3b282a', '#2d2f3c', '#343e36', '#817366'],
     },
-    status: 'Colour Matching',
-  },
-  {
-    name: 'KAP Technocraft',
-    id: 'kap-technocraft',
-    previewImage: previewImageTechnocraft,
-    designer: 'madmax13',
-    colors: {
-      main: '#f2f5f2',
-      legends: ['#bc3e34', '#ae5633', '#e8ab42', '#000000'],
-    },
-    modifiers: 'Default',
+    modifiers: 'Text',
     sublegends: 'None',
-    status: 'Design',
-  },
-  {
-    name: 'KAP Super Keycaps',
-    id: 'kap-super-keycaps',
-    previewImage: previewImageSuperKeycaps,
-    designer: 'kapowaz',
-    modifiers: 'Default',
-    sublegends: 'Katakana',
-    colors: {
-      main: '#C6C0B9',
-      legends: ['#404040', '#83807C', '#C1121C', '#F7BA0B', '#007243', '#00387B'],
-    },
-    status: 'Colour Matching',
+    status: 'Pre-order',
   },
   {
     name: 'KAP Retro Lights R2',
     id: 'kap-retro-lights-r2',
-    previewImage: previewImageRetroLightsR2,
+    previewImages: [previewImageRetroLightsR2],
     designer: 'Jr.Mars',
     modifiers: 'Text',
     sublegends: 'None',
@@ -512,26 +494,26 @@ export const projects: Array<IProject> = [
       main: '#cac9c5',
       legends: ['#000000', '#25bd59', '#048cd8', '#ffbf3f', '#ff665e', '#a564b6', '#ab60bd'],
     },
-    status: 'Colour Matching',
+    status: 'Manufacturing',
     shipping: 'October 2025',
   },
   {
-    name: 'KAP Y',
-    id: 'kap-y',
-    previewImage: previewImageY,
-    designer: 'Bowl Keyboards',
-    modifiers: 'Text',
-    sublegends: 'None',
+    name: 'KAP Yarōze',
+    id: 'kap-yaroze',
+    previewImages: [previewImageYaroze, previewImageYarozeNovelties],
+    designer: 'kapowaz',
+    modifiers: 'Default',
+    sublegends: 'Hiragana',
     colors: {
-      main: '#ab8575',
-      legends: ['#FFFFFF', '#f18b26'],
+      main: '#1E1E1E',
+      legends: ['#2E2E2E', '#404040', '#DD8AD1', '#F05951', '#47D0C5', '#9BBAEF'],
     },
-    status: 'Design',
+    status: 'Colour Matching',
   },
   {
     name: 'KAP Glyph Edius',
     id: 'kap-glyph-edius',
-    previewImage: previewImageGlyphEdius,
+    previewImages: [previewImageGlyphEdius],
     designer: 'SS',
     modifiers: 'Default',
     sublegends: 'Icon',
@@ -544,7 +526,7 @@ export const projects: Array<IProject> = [
   {
     name: 'KAP Grey Alert',
     id: 'kap-grey-alert',
-    previewImage: previewImageGreyAlert,
+    previewImages: [previewImageGreyAlert],
     designer: 'KasperL',
     modifiers: 'Default',
     sublegends: 'None',
@@ -555,9 +537,102 @@ export const projects: Array<IProject> = [
     status: 'Design',
   },
   {
+    name: 'KAP Santa Llum',
+    id: 'kap-santa-llum',
+    previewImages: [previewImageSantaLlumNaixement, previewImageSantaLlumResurreccio],
+    designer: 'L’Ortiz & Manu',
+    modifiers: 'Text',
+    sublegends: 'None',
+    colors: {
+      main: '#4f2b2f',
+      legends: ['#7a2824', '#b37122', '#b69428', '#2a3940', '#275340', '#40966b'],
+    },
+    status: 'Group Buy',
+    shipping: '2026',
+  },
+  {
+    name: 'KAP Buff Bride',
+    id: 'kap-buff-bride',
+    previewImages: [previewImageBuffBride],
+    designer: 'Patty',
+    modifiers: 'Text',
+    sublegends: 'None',
+    colors: {
+      main: '#adadbb',
+      legends: ['#FFFFFF', '#c36e81', '#19020c'],
+    },
+    status: 'Manufacturing',
+    shipping: 'January 2026',
+  },
+  {
+    name: 'KAP One Dark',
+    id: 'kap-one-dark',
+    previewImages: [previewImageOneDark],
+    designer: 'kapowaz',
+    modifiers: 'Default',
+    sublegends: 'None',
+    colors: {
+      main: '#181d27ff',
+      legends: ['#818896', '#FF73DC', '#FF675D', '#FFA544', '#FEBC4A', '#A7F038', '#63CDEE'],
+    },
+    status: 'Design',
+  },
+  {
+    name: 'KAP Reboot Wolf',
+    id: 'kap-reboot-wolf',
+    previewImages: [previewImageRebootWolf],
+    designer: 'kapowaz',
+    modifiers: 'Default',
+    sublegends: 'Katakana',
+    colors: {
+      main: '#343627',
+      legends: ['#68647D', '#F36925'],
+    },
+    status: 'Design',
+  },
+  {
+    name: 'KAP Matchpoint',
+    id: 'kap-matchpoint',
+    previewImages: [previewImageMatchpoint],
+    designer: 'kapowaz',
+    modifiers: 'Icon Alternate',
+    sublegends: 'None',
+    colors: {
+      main: '#00381A',
+      legends: ['#2F0550', '#E1FF1E', '#FFFFFF'],
+    },
+    status: 'Design',
+  },
+  {
+    name: 'KAP Scuderia Turismo',
+    id: 'kap-scuderia-turismo',
+    previewImages: [previewImageScuderiaTurismo],
+    designer: 'kapowaz',
+    modifiers: 'Icon/Text Hybrid',
+    sublegends: 'None',
+    colors: {
+      main: '#D52B1E',
+      legends: ['#000000', '#FECB00', '#FFFFFF'],
+    },
+    status: 'Design',
+  },
+  {
+    name: 'KAP Super Keycaps',
+    id: 'kap-super-keycaps',
+    previewImages: [previewImageSuperKeycaps],
+    designer: 'kapowaz',
+    modifiers: 'Default',
+    sublegends: 'Katakana',
+    colors: {
+      main: '#C6C0B9',
+      legends: ['#404040', '#83807C', '#C1121C', '#F7BA0B', '#007243', '#00387B'],
+    },
+    status: 'Design',
+  },
+  {
     name: 'KAP Calculator',
     id: 'kap-calculator',
-    previewImage: previewImageCalculator,
+    previewImages: [previewImageCalculator],
     designer: 'kapowaz',
     modifiers: 'Default',
     sublegends: 'None',
@@ -568,9 +643,22 @@ export const projects: Array<IProject> = [
     status: 'Design',
   },
   {
+    name: 'KAP Technocraft',
+    id: 'kap-technocraft',
+    previewImages: [previewImageTechnocraft],
+    designer: 'madmax13',
+    colors: {
+      main: '#f2f5f2',
+      legends: ['#bc3e34', '#ae5633', '#e8ab42', '#000000'],
+    },
+    modifiers: 'Default',
+    sublegends: 'None',
+    status: 'Design',
+  },
+  {
     name: 'KAP Nightscape',
     id: 'kap-nightscape',
-    previewImage: previewImageNightscape,
+    previewImages: [previewImageNightscape],
     designer: 'keebibi',
     modifiers: 'Icon/Text Hybrid',
     sublegends: 'Hangul',
@@ -583,7 +671,7 @@ export const projects: Array<IProject> = [
   {
     name: 'KAP Active',
     id: 'kap-active',
-    previewImage: previewImageActive,
+    previewImages: [previewImageActive],
     designer: 'kapowaz',
     modifiers: 'Default',
     sublegends: 'None',
@@ -596,7 +684,7 @@ export const projects: Array<IProject> = [
   {
     name: 'KAP White Rabbit',
     id: 'kap-white-rabbit',
-    previewImage: previewImageWhiteRabbit,
+    previewImages: [previewImageWhiteRabbit],
     designer: 'kapowaz',
     modifiers: 'Default',
     sublegends: 'Hangul',
@@ -609,7 +697,7 @@ export const projects: Array<IProject> = [
   {
     name: 'KAP Mega Keycaps',
     id: 'kap-mega-keycaps',
-    previewImage: previewImageMegaKeycaps,
+    previewImages: [previewImageMegaKeycaps],
     designer: 'kapowaz',
     modifiers: 'Default',
     sublegends: 'Katakana',
@@ -622,7 +710,7 @@ export const projects: Array<IProject> = [
   {
     name: 'KAP Kawaii',
     id: 'kap-kawaii',
-    previewImage: previewImageKawaii,
+    previewImages: [previewImageKawaii],
     designer: 'kapowaz',
     modifiers: 'Default',
     sublegends: 'Hiragana',
@@ -633,22 +721,9 @@ export const projects: Array<IProject> = [
     status: 'Design',
   },
   {
-    name: 'KAP Code',
-    id: 'kap-code',
-    previewImage: previewImageCode,
-    designer: 'kapowaz',
-    modifiers: 'Default',
-    sublegends: 'None',
-    colors: {
-      main: '#13161B',
-      legends: ['#434447', '#843BBF', '#BB173E', '#E57C1A', '#E9B935', '#D4F76E', '#50B7D3'],
-    },
-    status: 'Design',
-  },
-  {
     name: 'KAP PX-16',
     id: 'kap-px-16',
-    previewImage: previewImagePX16,
+    previewImages: [previewImagePX16],
     designer: 'kapowaz',
     modifiers: 'Icon/Text Hybrid',
     sublegends: 'Functional',
@@ -661,7 +736,7 @@ export const projects: Array<IProject> = [
   {
     name: 'KAP Harajuku',
     id: 'kap-harajuku',
-    previewImage: previewImageHarajuku,
+    previewImages: [previewImageHarajuku],
     designer: 'kapowaz',
     modifiers: 'Default',
     sublegends: 'Hiragana',
@@ -674,7 +749,7 @@ export const projects: Array<IProject> = [
   {
     name: 'KAP Dolch',
     id: 'kap-dolch',
-    previewImage: previewImageDolch,
+    previewImages: [previewImageDolch],
     designer: 'kapowaz',
     modifiers: 'Icon/Text Hybrid',
     sublegends: 'None',
@@ -685,23 +760,9 @@ export const projects: Array<IProject> = [
     status: 'Design',
   },
   {
-    name: 'KAP Theatrum Orbis Terrarum',
-    id: 'kap-tot',
-    previewImage: previewImageTot,
-    interestCheckUrl: 'https://geekhack.org/index.php?topic=124263.0',
-    designer: 'Keepo',
-    colors: {
-      main: '#aaa69d',
-      legends: ['#000000', '#3b282a', '#2d2f3c', '#343e36', '#817366'],
-    },
-    modifiers: 'Text',
-    sublegends: 'None',
-    status: 'On hold',
-  },
-  {
     name: 'KAP Terrazzo',
     id: 'kap-terrazzo',
-    previewImage: previewImageTerrazzo,
+    previewImages: [previewImageTerrazzo],
     interestCheckUrl: 'https://geekhack.org/index.php?topic=123215.0',
     designer: 'Beesley',
     modifiers: 'Hybrid',
@@ -712,6 +773,19 @@ export const projects: Array<IProject> = [
     },
     status: 'On hold',
   },
+  {
+    name: 'KAP Y',
+    id: 'kap-y',
+    previewImages: [previewImageY],
+    designer: 'Bowl Keyboards',
+    modifiers: 'Text',
+    sublegends: 'None',
+    colors: {
+      main: '#ab8575',
+      legends: ['#FFFFFF', '#f18b26'],
+    },
+    status: 'On Hold',
+  },
 ];
 
 /**
@@ -721,5 +795,4 @@ export const projects: Array<IProject> = [
  * KAP Santa Llum https://cord-screen-96a.notion.site/KAP-Santa-LLum-21b889ba936e80a2929cf18efa8527c0
  * KAP Buff Bride
  * KAP Reboot Wolf
- * KAP One Dark
  */
