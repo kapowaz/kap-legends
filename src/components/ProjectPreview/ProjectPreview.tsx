@@ -10,7 +10,7 @@ import styles from './ProjectPreview.module.css';
 export const ProjectPreview = ({
   name,
   id,
-  previewImage,
+  previewImages,
   interestCheckUrl,
   designer,
   materials,
@@ -29,9 +29,16 @@ export const ProjectPreview = ({
 
       <ProjectColors main={colors.main} legends={colors.legends} />
 
-      {previewImage && (
+      {previewImages && (
         <div className={styles.previewImageWrapper}>
-          <Img src={previewImage} alt={`Image preview of {name}`} className={styles.previewImage} />
+          {previewImages.map((image) => (
+            <Img
+              key={image}
+              src={image}
+              alt={`Image preview of {name}`}
+              className={styles.previewImage}
+            />
+          ))}
         </div>
       )}
 
