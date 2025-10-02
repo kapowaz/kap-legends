@@ -5,13 +5,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import isInternalUrl from '@docusaurus/isInternalUrl';
 import IconExternalLink from '@theme/Icon/ExternalLink';
 import type { Props } from '@theme/Footer/LinkItem';
-import {
-  BigCat,
-  KAPLegendSystem,
-  Kapowaz,
-  Keyreative,
-  SVGComponent,
-} from '@site/src/components/Icons';
+import { BigCat, KAPLegendSystem, KBolt, Keyreative } from '@site/src/components/Icons';
+import type { SVGComponent } from '@site/src/types';
 import styles from './styles.module.css';
 
 export type FooterIcon = 'kapowaz' | 'keyreative' | 'bigcat' | 'kap';
@@ -23,7 +18,7 @@ export interface IFooterLinkItemProps extends Props {
 }
 
 const FOOTERICON_SVG: Record<FooterIcon, SVGComponent> = {
-  kapowaz: Kapowaz,
+  kapowaz: KBolt,
   kap: KAPLegendSystem,
   keyreative: Keyreative,
   bigcat: BigCat,
